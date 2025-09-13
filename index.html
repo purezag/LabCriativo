@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Company | Best Crafts E-commerce </title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <div class="bg-blobs" aria-hidden="true">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+    <div class="blob b4"></div>
+    <div class="blob b5"></div>
+    <div class="blob b6"></div>
+  </div>
+  <div class="glass-base" aria-hidden="true"></div>
+</head>
+
+<body>
+  <header>
+    <section class="stick-bar">
+      <div class="left-bar">
+        <button id="menu-toggle" class="click-ignore"><i class="fa-solid fa-bars"></i></button>
+        <div class="hidden-left-bar click-ignore">
+          <nav>
+            <ul>
+              <li class="menu-inicio"><a href="#hero"><i class="fa-solid fa-house-chimney"></i>Início</a></li>
+              <li class="menu-sobre"><a href="#about"><i class="fa-solid fa-users"></i>Sobre</a></li>
+              <li class="menu-promocoes"><a href="#promotions"><i class="fa-solid fa-store"></i>Promoções</a></li>
+              <li class="menu-contato"><a href="#contact"><i class="fa-solid fa-headset"></i>Contato</a></li>
+            </ul>
+          </nav>
+          <div class="line"></div>
+          <div class="login-section">
+            <a href="#"><i class="fa-solid fa-user"></i><span>Login</span></a>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i><span>Registrar</span></a>
+            <a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i><span>Logout</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="logo-home">
+        <a href="#hero"><img src="./Imagens/logo.png" alt="Logo"></a>
+      </div>
+      <div class="store-cart">
+        <button id="cart-toggle" class="click-ignore"><i class="fa-solid fa-bag-shopping"></i></button>
+        <div class="cart-popup click-ignore">
+          <h4>your <strong>bag</strong></h4>
+          <div class="cart-items">
+            <div class="cart-item">
+              <a href="#" class="cart-item-link">
+                <img src="./Imagens/white-mug.png" alt="Produto 1">
+              </a>
+              <div class="cart-item-info">
+                <a href="#" class="cart-item-link">
+                  <h5>Product 1</h5>
+                </a>
+                <p class="price" data-price="39.99">$ 39,99</p>
+                <div class="quantity">
+                  <button class="qty-btn">-</button>
+                  <input type="number" value="1" min="1">
+                  <button class="qty-btn">+</button>
+                </div>
+              </div>
+              <button class="remove-item">✖</button>
+            </div>
+            <div class="cart-item">
+              <a href="#" class="cart-item-link">
+                <img src="./Imagens/blue-mug.png" alt="Produto 2">
+              </a>
+              <div class="cart-item-info">
+                <a href="#" class="cart-item-link">
+                  <h5>Product 2</h5>
+                </a>
+                <p class="price" data-price="29.99">$ 29,99</p>
+                <div class="quantity">
+                  <button class="qty-btn">-</button>
+                  <input type="number" value="2" min="1">
+                  <button class="qty-btn">+</button>
+                </div>
+              </div>
+              <button class="remove-item">✖</button>
+            </div>
+            <div class="cart-item">
+              <a href="produto3.html" class="cart-item-link">
+                <img src="./Imagens/orange-mug.png" alt="Produto 3">
+              </a>
+              <div class="cart-item-info">
+                <a href="produto3.html" class="cart-item-link">
+                  <h5>Product 3</h5>
+                </a>
+                <p class="price" data-price="19.99">$ 19,99</p>
+                <div class="quantity">
+                  <button class="qty-btn">-</button>
+                  <input type="number" value="1" min="1">
+                  <button class="qty-btn">+</button>
+                </div>
+              </div>
+              <button class="remove-item">✖</button>
+            </div>
+          </div>
+          <div class="cart-footer">
+            <p><strong>Total: <span id="cart-total"><strong></strong></span></strong></p>
+            <button id="checkout-btn">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main>
+
+    <section class="hero" id="hero">
+
+
+      <div class="backround-glass">
+        <img class="img-glass1" src="./Imagens/glass-blue.png" alt="">
+        <img class="img-glass2" src="./Imagens/glass-orange.png" alt="">
+        <img class="img-glass3" src="./Imagens/glass-purple.png" alt="">
+        <img class="img-glass5" src="./Imagens/glass-blue.png" alt="">
+        <img class="img-glass6" src="./Imagens/glass-purple.png" alt="">
+        <img class="img-glass7" src="./Imagens/glass-orange.png" alt="">
+
+      </div>
+
+      <div class="hero-content">
+
+        <div class="logos">
+          <img class="img-glass4" src="./Imagens/logo.png" alt="">
+          <img src="./Imagens/logo-tipo.png" alt="Logo" class="logo">
+        </div>
+
+        <div class="info-home">
+          <div class="selo">
+
+            <img src="./Imagens/bike.png" alt="">
+            <div class="card">
+              <h1>title <strong>here</strong></h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo culpa optio eum? Ducimus delectus
+                reprehenderit rem.
+              </p>
+
+            </div>
+          </div>
+
+          <div class="selo">
+
+            <img src="./Imagens/stars.png" alt="">
+            <div class="card">
+              <h1>title <strong>here</strong></h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo culpa optio eum? Ducimus delectus
+                reprehenderit rem.
+              </p>
+
+            </div>
+          </div>
+
+          <div class="selo">
+
+            <img src="./Imagens/notebook.png" alt="">
+            <div class="card">
+              <h1>title <strong>here</strong></h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo culpa optio eum? Ducimus delectus
+                reprehenderit rem.
+              </p>
+
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="carousel-comment" mask>
+          <article>
+            <div class="personal-info">
+              <img
+                src="https://images.pexels.com/photos/635699/pexels-photo-635699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="">
+              <h2><strong>Nome</strong> Sobrenome</h2>
+              <span>Pelotas - RS</span>
+              <div class="stars-comment">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
+              <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo culpa optio eum? Ducimus delectus
+                  reprehenderit rem.</p>
+              </div>
+          </article>
+
+          <article>
+            <div class="personal-info">
+              <img
+                src="https://images.pexels.com/photos/635699/pexels-photo-635699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="">
+              <h2><strong>Nome</strong> Sobrenome</h2>
+              <span>Pelotas - RS</span>
+              <div class="stars-comment">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
+              <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo culpa optio eum? Ducimus delectus
+                  reprehenderit rem..</p>
+              </div>
+          </article>
+
+          <article>
+            <div class="personal-info">
+              <img
+                src="https://images.pexels.com/photos/635699/pexels-photo-635699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="">
+              <h2><strong>Nome</strong> Sobrenome</h2>
+              <span>Pelotas - RS</span>
+              <div class="stars-comment">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
+              <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo culpa optio eum? Ducimus delectus
+                  reprehenderit rem.</p>
+              </div>
+          </article>
+
+          <article>
+            <div class="personal-info">
+              <img
+                src="https://images.pexels.com/photos/635699/pexels-photo-635699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="">
+              <h2><strong>Nome</strong> Sobrenome</h2>
+              <span>Pelotas - RS</span>
+              <div class="stars-comment">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
+              <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo culpa optio eum? Ducimus delectus
+                  reprehenderit rem.</p>
+              </div>
+          </article>
+
+          <article>
+            <div class="personal-info">
+              <img
+                src="https://images.pexels.com/photos/635699/pexels-photo-635699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="">
+              <h2><strong>Nome</strong> Sobrenome</h2>
+              <span>Pelotas - RS</span>
+              <div class="stars-comment">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
+              <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo culpa optio eum? Ducimus delectus
+                  reprehenderit rem.</p>
+              </div>
+          </article>
+
+          <article>
+            <div class="personal-info">
+              <img
+                src="https://images.pexels.com/photos/635699/pexels-photo-635699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="">
+              <h2><strong>Nome</strong> Sobrenome</h2>
+              <span>Pelotas - RS</span>
+              <div class="stars-comment">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
+              <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo culpa optio eum? Ducimus delectus
+                  reprehenderit rem.</p>
+              </div>
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="home-page">
+      <div class="backround-glass">
+        <img class="img-glass8" src="./Imagens/glass-blue.png" alt="">
+        <img class="img-glass9" src="./Imagens/glass-orange.png" alt="">
+        <img class="img-glass10" src="./Imagens/glass-purple.png" alt="">
+        <img class="img-glass11" src="./Imagens/glass-orange.png" alt="">
+        <img class="img-glass12" src="./Imagens/glass-blue.png" alt="">
+        <img class="img-glass13" src="./Imagens/glass-purple.png" alt="">
+        <img class="img-glass14" src="./Imagens/glass-orange.png" alt="">
+        <img class="img-glass15" src="./Imagens/glass-purple.png" alt="">
+        <img class="img-glass16" src="./Imagens/glass-orange.png" alt="">
+        <img class="img-glass17" src="./Imagens/glass-blue.png" alt="">
+        <img class="img-glass18" src="./Imagens/glass-purple.png" alt="">
+        <img class="img-glass19" src="./Imagens/glass-orange.png" alt="">
+
+      </div>
+
+
+      <div class="carousel">
+        <div class="carousel-item active">
+          <a href="#">
+            <picture>
+
+              <source media="(max-width: 768px)" srcset="./Imagens/teste.png">
+
+              <source media="(max-width: 1200px)" srcset="./Imagens/teste.png">
+
+              <img src="./Imagens/slide3.png" alt="Imagem 1">
+            </picture>
+          </a>
+
+        </div>
+
+        <div class="carousel-item">
+          <a href="#">
+            <picture>
+
+              <source media="(max-width: 768px)" srcset="./Imagens/teste.png">
+
+              <source media="(max-width: 1200px)" srcset="./Imagens/teste.png">
+
+              <img src="./Imagens/slide3.png" alt="Imagem 1">
+            </picture>
+          </a>
+
+        </div>
+
+        <div class="carousel-item">
+          <a href="#">
+            <picture>
+
+              <source media="(max-width: 768px)" srcset="./Imagens/teste.png">
+
+              <source media="(max-width: 1200px)" srcset="./Imagens/teste.png">
+
+              <img src="./Imagens/slide3.png" alt="Imagem 1">
+            </picture>
+          </a>
+
+        </div>
+
+
+        <button class="carousel-control prev"><i class="fa-solid fa-angle-left"></i></button>
+        <button class="carousel-control next"><i class="fa-solid fa-angle-right"></i></button>
+
+
+        <div class="indicators">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+
+      <div class="main-content">
+
+        <div class="search-section">
+          <h1></h1>
+          <div class="search-bar">
+            <input type="text" id="searchInput" required placeholder="O que tu procuras?">
+            <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+          </div>
+        </div>
+
+
+        <div class="icons-section">
+          <div class="icon" data-segment="canecas">
+            <img src="./Imagens/mugs.png" alt="Canecas">
+            <p>Canecas</p>
+          </div>
+          <div class="icon" data-segment="roupas">
+            <img src="./Imagens/clothes.png" alt="Roupas">
+            <p>Roupas</p>
+          </div>
+          <div class="icon" data-segment="garrafas">
+            <img src="./Imagens/bottles.png" alt="Garrafas">
+            <p>Garrafas</p>
+          </div>
+          <div class="icon" data-segment="misc">
+            <img src="./Imagens/misc.png" alt="Misc">
+            <p>Diversos</p>
+          </div>
+
+        </div>
+
+
+        <div class="promotions-section">
+          <h1><strong>Novidades</strong> selecionadas <strong>para você</strong></h1>
+          <div class="cards-container">
+            <div class="shop">
+              <h2>Item Numero Um</h2>
+              <span><strong>Informação</strong> extra</span>
+              <img src="./Imagens/mugs.png" alt="Caneca Mágica">
+              <p class="old-price">R$ <strong>50,00</strong></p>
+              <p class="new-price"><b>a partir de</b><br>R$ <strong>35,00</strong></p>
+              <div class="card-buttons">
+
+                <button class="buy-btn">Comprar</button>
+              </div>
+            </div>
+            <div class="shop">
+              <h2>Item Numero Dois</h2>
+              <span><strong>Informação</strong> extra</span>
+              <img src="./Imagens/bottles.png" alt="Camiseta Estampa">
+              <p class="old-price">R$ <strong>70,00</strong></p>
+              <p class="new-price"><b>a partir de</b><br>R$ <strong>49,00</strong></p>
+              <div class="card-buttons">
+                <button class="buy-btn">Comprar</button>
+
+              </div>
+            </div>
+            <div class="shop">
+              <h2>Item Numero três</h2>
+              <span><strong>Informação</strong> extra</span>
+              <img src="./Imagens/clothes.png" alt="Garrafa Térmica">
+              <p class="old-price">R$ <strong>80,00</strong></p>
+              <p class="new-price"><b>a partir de</b><br>R$ <strong>60,00</strong></p>
+              <div class="card-buttons">
+                <button class="buy-btn">Comprar</button>
+
+              </div>
+            </div>
+
+            <div class="shop">
+              <h2>Item Numero Quatro</h2>
+              <span><strong>Informação</strong> extra</span>
+              <img src="./Imagens/mugs.png" alt="Caneca Mágica">
+              <p class="old-price">R$ <strong>50,00</strong></p>
+              <p class="new-price"><b>a partir de</b><br>R$ <strong>35,00</strong></p>
+              <div class="card-buttons">
+                <button class="buy-btn">Comprar</button>
+
+              </div>
+            </div>
+
+            <div class="shop">
+              <h2>Item Numero Cinco</h2>
+              <span><strong>Informação</strong> extra</span>
+              <img src="./Imagens/mugs.png" alt="Caneca Mágica">
+              <p class="old-price">R$ <strong>50,00</strong></p>
+              <p class="new-price"><b>a partir de</b><br>R$ <strong>35,00</strong></p>
+              <div class="card-buttons">
+                <button class="buy-btn">Comprar</button>
+
+              </div>
+            </div>
+            <div class="shop">
+              <h2>Item Numero Seis</h2>
+              <span><strong>Informação</strong> extra</span>
+              <img src="./Imagens/bottles.png" alt="Camiseta Estampa">
+              <p class="old-price">R$ <strong>70,00</strong></p>
+              <p class="new-price"><b>a partir de</b><br>R$ <strong>49,00</strong></p>
+              <div class="card-buttons">
+                <button class="buy-btn">Comprar</button>
+
+              </div>
+            </div>
+            <div class="shop">
+              <h2>Item Numero Sete</h2>
+              <span><strong>Informação</strong> extra</span>
+              <img src="./Imagens/clothes.png" alt="Garrafa Térmica">
+              <p class="old-price">R$ <strong>80,00</strong></p>
+              <p class="new-price"><b>a partir de</b><br>R$ <strong>60,00</strong></p>
+              <div class="card-buttons">
+                <button class="buy-btn">Comprar</button>
+
+              </div>
+            </div>
+
+            <div class="shop">
+              <h2>Item Numero Oito</h2>
+              <span><strong>Informação</strong> extra</span>
+              <img src="./Imagens/mugs.png" alt="Caneca Mágica">
+              <p class="old-price">R$ <strong>50,00</strong></p>
+              <p class="new-price"><b>a partir de</b><br>R$ <strong>35,00</strong></p>
+              <div class="card-buttons">
+                <button class="buy-btn">Comprar</button>
+
+              </div>
+
+
+            </div>
+
+            <div class="shop">
+              <h2>Item Numero Nove</h2>
+              <span><strong>Informação</strong> extra</span>
+              <img src="./Imagens/mugs.png" alt="Caneca Mágica">
+              <p class="old-price">R$ <strong>50,00</strong></p>
+              <p class="new-price"><b>a partir de</b><br>R$ <strong>35,00</strong></p>
+              <div class="card-buttons">
+                <button class="buy-btn">Comprar</button>
+
+              </div>
+            </div>
+            <div class="shop">
+              <h2>Item Numero Dez</h2>
+              <span><strong>Informação</strong> extra</span>
+              <img src="./Imagens/bottles.png" alt="Camiseta Estampa">
+              <p class="old-price">R$ <strong>70,00</strong></p>
+              <p class="new-price"><b>a partir de</b><br>R$ <strong>49,00</strong></p>
+              <div class="card-buttons">
+                <button class="buy-btn">Comprar</button>
+
+              </div>
+            </div>
+            <div class="shop">
+              <h2>Item Numero Onze</h2>
+              <span><strong>Informação</strong> extra</span>
+              <img src="./Imagens/clothes.png" alt="Garrafa Térmica">
+              <p class="old-price">R$ <strong>80,00</strong></p>
+              <p class="new-price"><b>a partir de</b><br>R$ <strong>60,00</strong></p>
+              <div class="card-buttons">
+                <button class="buy-btn">Comprar</button>
+
+              </div>
+            </div>
+
+            <div class="shop">
+              <h2>Item Numero Doze</h2>
+              <span><strong>Informação</strong> extra</span>
+              <img src="./Imagens/mugs.png" alt="Caneca Mágica">
+              <p class="old-price">R$ <strong>50,00</strong></p>
+              <p class="new-price"><b>a partir de</b><br>R$ <strong>35,00</strong></p>
+              <div class="card-buttons">
+                <button class="buy-btn">Comprar</button>
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="line-cut"></div>
+
+
+
+        <div class="icons-section">
+          <div class="icon" data-segment="canecas">
+            <img src="./Imagens/mugs.png" alt="Canecas">
+            <p>Canecas</p>
+          </div>
+          <div class="icon" data-segment="roupas">
+            <img src="./Imagens/clothes.png" alt="Roupas">
+            <p>Roupas</p>
+          </div>
+          <div class="icon" data-segment="garrafas">
+            <img src="./Imagens/bottles.png" alt="Garrafas">
+            <p>Garrafas</p>
+          </div>
+          <div class="icon" data-segment="misc">
+            <img src="./Imagens/misc.png" alt="Misc">
+            <p>Diversos</p>
+          </div>
+
+        </div>
+
+        <div class="line-cut"></div>
+
+    </section>
+
+    <section class="filter-section section-mug" tabindex="-1" aria-hidden="true">
+
+      <img src="./Imagens/mug-header.png" alt="" class="filter-header">
+      <div class="promotions-section">
+
+        <h1 class="filter-titles"><strong>Canecas</strong> Personalizaveis</h1>
+      </div>
+      <div class="cards-container">
+        <div class="shop">
+          <h2>Item Numero Um</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/mugs.png" alt="Caneca Mágica">
+          <p class="old-price">R$ <strong>50,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>35,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+        <div class="shop">
+          <h2>Item Numero Dois</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/bottles.png" alt="Camiseta Estampa">
+          <p class="old-price">R$ <strong>70,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>49,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+        <div class="shop">
+          <h2>Item Numero três</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/clothes.png" alt="Garrafa Térmica">
+          <p class="old-price">R$ <strong>80,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>60,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+
+        <div class="shop">
+          <h2>Item Numero Quatro</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/mugs.png" alt="Caneca Mágica">
+          <p class="old-price">R$ <strong>50,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>35,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+
+        <div class="shop">
+          <h2>Item Numero Cinco</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/mugs.png" alt="Caneca Mágica">
+          <p class="old-price">R$ <strong>50,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>35,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+        <div class="shop">
+          <h2>Item Numero Seis</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/bottles.png" alt="Camiseta Estampa">
+          <p class="old-price">R$ <strong>70,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>49,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+        <div class="shop">
+          <h2>Item Numero Sete</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/clothes.png" alt="Garrafa Térmica">
+          <p class="old-price">R$ <strong>80,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>60,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+
+        <div class="shop">
+          <h2>Item Numero Oito</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/mugs.png" alt="Caneca Mágica">
+          <p class="old-price">R$ <strong>50,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>35,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+
+
+        </div>
+
+        <div class="shop">
+          <h2>Item Numero Nove</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/mugs.png" alt="Caneca Mágica">
+          <p class="old-price">R$ <strong>50,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>35,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+        <div class="shop">
+          <h2>Item Numero Dez</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/bottles.png" alt="Camiseta Estampa">
+          <p class="old-price">R$ <strong>70,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>49,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+        <div class="shop">
+          <h2>Item Numero Onze</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/clothes.png" alt="Garrafa Térmica">
+          <p class="old-price">R$ <strong>80,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>60,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+
+        <div class="shop">
+          <h2>Item Numero Doze</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/mugs.png" alt="Caneca Mágica">
+          <p class="old-price">R$ <strong>50,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>35,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+
+
+        </div>
+        <button class="back-btn">Voltar</button>
+
+        <div class="space"></div>
+
+      </div>
+      </div>
+    </section>
+
+    <section class="filter-section section-clothes" tabindex="-1" aria-hidden="true">
+
+      <img src="./Imagens/clothe-header.png" alt="" class="filter-header">
+      <div class="promotions-section">
+
+        <h1 class="filter-titles"><strong>Roupas</strong> Personalizaveis</h1>
+      </div>
+      <div class="cards-container">
+        <div class="shop">
+          <h2>Item Numero Um</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/mugs.png" alt="Caneca Mágica">
+          <p class="old-price">R$ <strong>50,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>35,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+        <div class="shop">
+          <h2>Item Numero Dois</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/bottles.png" alt="Camiseta Estampa">
+          <p class="old-price">R$ <strong>70,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>49,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+        <div class="shop">
+          <h2>Item Numero três</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/clothes.png" alt="Garrafa Térmica">
+          <p class="old-price">R$ <strong>80,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>60,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+
+        <div class="shop">
+          <h2>Item Numero Quatro</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/mugs.png" alt="Caneca Mágica">
+          <p class="old-price">R$ <strong>50,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>35,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+
+        <div class="shop">
+          <h2>Item Numero Cinco</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/mugs.png" alt="Caneca Mágica">
+          <p class="old-price">R$ <strong>50,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>35,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+        <div class="shop">
+          <h2>Item Numero Seis</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/bottles.png" alt="Camiseta Estampa">
+          <p class="old-price">R$ <strong>70,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>49,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+        <div class="shop">
+          <h2>Item Numero Sete</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/clothes.png" alt="Garrafa Térmica">
+          <p class="old-price">R$ <strong>80,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>60,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+
+        <div class="shop">
+          <h2>Item Numero Oito</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/mugs.png" alt="Caneca Mágica">
+          <p class="old-price">R$ <strong>50,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>35,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+
+
+        </div>
+
+        <div class="shop">
+          <h2>Item Numero Nove</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/mugs.png" alt="Caneca Mágica">
+          <p class="old-price">R$ <strong>50,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>35,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+        <div class="shop">
+          <h2>Item Numero Dez</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/bottles.png" alt="Camiseta Estampa">
+          <p class="old-price">R$ <strong>70,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>49,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+        <div class="shop">
+          <h2>Item Numero Onze</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/clothes.png" alt="Garrafa Térmica">
+          <p class="old-price">R$ <strong>80,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>60,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+
+        <div class="shop">
+          <h2>Item Numero Doze</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/mugs.png" alt="Caneca Mágica">
+          <p class="old-price">R$ <strong>50,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>35,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+
+
+        </div>
+        <button class="back-btn">Voltar</button>
+
+        <div class="space"></div>
+
+      </div>
+      </div>
+    </section>
+
+    <section class="filter-section section-bottles" tabindex="-1" aria-hidden="true">
+
+      <img src="./Imagens/bottle-header.png" alt="" class="filter-header">
+      <div class="promotions-section">
+
+        <h1 class="filter-titles"><strong>Garrafas</strong> Personalizaveis</h1>
+      </div>
+      <div class="cards-container">
+        <div class="shop">
+          <h2>Item Numero Um</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/mugs.png" alt="Caneca Mágica">
+          <p class="old-price">R$ <strong>50,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>35,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+        <div class="shop">
+          <h2>Item Numero Dois</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/bottles.png" alt="Camiseta Estampa">
+          <p class="old-price">R$ <strong>70,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>49,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+        <div class="shop">
+          <h2>Item Numero três</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/clothes.png" alt="Garrafa Térmica">
+          <p class="old-price">R$ <strong>80,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>60,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+
+        <div class="shop">
+          <h2>Item Numero Quatro</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/mugs.png" alt="Caneca Mágica">
+          <p class="old-price">R$ <strong>50,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>35,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+
+        <div class="shop">
+          <h2>Item Numero Cinco</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/mugs.png" alt="Caneca Mágica">
+          <p class="old-price">R$ <strong>50,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>35,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+        <div class="shop">
+          <h2>Item Numero Seis</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/bottles.png" alt="Camiseta Estampa">
+          <p class="old-price">R$ <strong>70,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>49,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+        <div class="shop">
+          <h2>Item Numero Sete</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/clothes.png" alt="Garrafa Térmica">
+          <p class="old-price">R$ <strong>80,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>60,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+
+        <div class="shop">
+          <h2>Item Numero Oito</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/mugs.png" alt="Caneca Mágica">
+          <p class="old-price">R$ <strong>50,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>35,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+
+
+        </div>
+
+        <div class="shop">
+          <h2>Item Numero Nove</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/mugs.png" alt="Caneca Mágica">
+          <p class="old-price">R$ <strong>50,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>35,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+        <div class="shop">
+          <h2>Item Numero Dez</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/bottles.png" alt="Camiseta Estampa">
+          <p class="old-price">R$ <strong>70,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>49,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+        <div class="shop">
+          <h2>Item Numero Onze</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/clothes.png" alt="Garrafa Térmica">
+          <p class="old-price">R$ <strong>80,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>60,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+
+        <div class="shop">
+          <h2>Item Numero Doze</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/mugs.png" alt="Caneca Mágica">
+          <p class="old-price">R$ <strong>50,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>35,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+
+
+        </div>
+        <button class="back-btn">Voltar</button>
+
+        <div class="space"></div>
+
+      </div>
+      </div>
+    </section>
+
+    <section class="filter-section section-misc" tabindex="-1" aria-hidden="true">
+
+      <img src="./Imagens/misc-header.png" alt="" class="filter-header">
+      <div class="promotions-section">
+
+        <h1 class="filter-titles"><strong>Itens Variados</strong> Personalizaveis</h1>
+      </div>
+      <div class="cards-container">
+        <div class="shop">
+          <h2>Item Numero Um</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/mugs.png" alt="Caneca Mágica">
+          <p class="old-price">R$ <strong>50,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>35,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+        <div class="shop">
+          <h2>Item Numero Dois</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/bottles.png" alt="Camiseta Estampa">
+          <p class="old-price">R$ <strong>70,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>49,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+        <div class="shop">
+          <h2>Item Numero três</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/clothes.png" alt="Garrafa Térmica">
+          <p class="old-price">R$ <strong>80,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>60,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+
+        <div class="shop">
+          <h2>Item Numero Quatro</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/mugs.png" alt="Caneca Mágica">
+          <p class="old-price">R$ <strong>50,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>35,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+
+        <div class="shop">
+          <h2>Item Numero Cinco</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/mugs.png" alt="Caneca Mágica">
+          <p class="old-price">R$ <strong>50,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>35,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+        <div class="shop">
+          <h2>Item Numero Seis</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/bottles.png" alt="Camiseta Estampa">
+          <p class="old-price">R$ <strong>70,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>49,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+        <div class="shop">
+          <h2>Item Numero Sete</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/clothes.png" alt="Garrafa Térmica">
+          <p class="old-price">R$ <strong>80,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>60,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+
+        <div class="shop">
+          <h2>Item Numero Oito</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/mugs.png" alt="Caneca Mágica">
+          <p class="old-price">R$ <strong>50,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>35,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+
+
+        </div>
+
+        <div class="shop">
+          <h2>Item Numero Nove</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/mugs.png" alt="Caneca Mágica">
+          <p class="old-price">R$ <strong>50,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>35,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+        <div class="shop">
+          <h2>Item Numero Dez</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/bottles.png" alt="Camiseta Estampa">
+          <p class="old-price">R$ <strong>70,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>49,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+        <div class="shop">
+          <h2>Item Numero Onze</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/clothes.png" alt="Garrafa Térmica">
+          <p class="old-price">R$ <strong>80,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>60,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+        </div>
+
+        <div class="shop">
+          <h2>Item Numero Doze</h2>
+          <span><strong>Informação</strong> extra</span>
+          <img src="./Imagens/mugs.png" alt="Caneca Mágica">
+          <p class="old-price">R$ <strong>50,00</strong></p>
+          <p class="new-price"><b>a partir de</b><br>R$ <strong>35,00</strong></p>
+          <div class="card-buttons">
+            <button class="buy-btn">Comprar</button>
+
+          </div>
+
+
+        </div>
+        <button class="back-btn">Voltar</button>
+
+        <div class="space"></div>
+
+      </div>
+      </div>
+    </section>
+
+    <section class="about-section" aria-hidden="true">
+
+      <div class="backround-glass">
+        <img class="img-glass20" src="./Imagens/glass-blue.png" alt="">
+        <img class="img-glass21" src="./Imagens/glass-orange.png" alt="">
+        <img class="img-glass22" src="./Imagens/glass-purple.png" alt="">
+        <img class="img-glass23" src="./Imagens/glass-blue.png" alt="">
+        <img class="img-glass24" src="./Imagens/glass-purple.png" alt="">
+        <img class="img-glass25" src="./Imagens/glass-orange.png" alt="">
+
+      </div>
+      <div class="about-content">
+
+        <div class="block block-1">
+          <img
+            src="https://images.unsplash.com/photo-1754136362561-fd8b431c78e4?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="About image 1">
+          <div class="text glass">
+            <h1>Sobre a nossa <strong>História</strong></h1>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quae aperiam sunt sequi aliquid culpa
+              ipsam dolores expedita cumque.</span>
+          </div>
+        </div>
+
+        <div class="block block-2">
+          <div class="text glass">
+            <h1>Nossa <strong>Missão</strong></h1>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quae aperiam sunt sequi aliquid culpa
+              ipsam dolores expedita cumque.</span>
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1754079132889-ac902392494e?q=80&w=680&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="About image 2">
+        </div>
+
+      </div>
+
+
+
+
+
+
+      <div class="space">
+
+        <button class="back-btn">Voltar</button>
+      </div>
+
+    </section>
+
+    <section class="contact-section" id="contact">
+      <img src="./Imagens/complet-logo.png" alt="" class="logo-contact">
+
+      <div class="contact-grid" role="region" aria-label="Área de contato">
+
+
+        <aside class="contact-info" aria-label="Informações de contato">
+
+          <div class="socials" aria-label="Redes sociais">
+
+            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i
+                class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter"><i
+                class="fa-brands fa-x-twitter"></i></a>
+          </div>
+
+
+          <div class="contacts-links">
+
+            <h3>Telefone</h3>
+            <div style="display:flex;gap:8px;align-items:center;">
+              <a class="contact-link" href="tel:+555399999999" aria-label="Ligar para +55 53 99999 9999">
+                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                <span>+55 53 9 9999-9999</span>
+              </a>
+
+
+            </div>
+
+
+            <h3>E-mail</h3>
+            <a class="contact-link" href="mailto:teuemail@mail.com" aria-label="Enviar e-mail para teuemail">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <span>teuemail@mail.com</span>
+            </a>
+
+
+            <h3>De onde somos</h3>
+            <a class="contact-link" href="https://www.google.com/maps/search/?api=1&query=Pelotas%2C+RS" target="_blank"
+              rel="noopener noreferrer" aria-label="Abrir Pelotas no Google Maps">
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span>Pelotas — Rio Grande do Sul</span>
+            </a>
+          </div>
+
+
+
+          <h3 class="pay-title">Formas de pagamento</h3>
+          <div class="payments" aria-hidden="false">
+
+
+
+            <div class="pay-item"><i class="fa-brands fa-cc-visa" aria-hidden="true"></i><span>Visa</span></div>
+
+            <div class="pay-item"><i class="fa-brands fa-cc-mastercard" aria-hidden="true"></i><span>Master</span></div>
+
+            <div class="pay-item"><i class="fa-brands fa-cc-paypal" aria-hidden="true"></i><span>PayPal</span></div>
+            <div class="pay-item"><i class="fa-solid fa-barcode" aria-hidden="true"></i><span>Boleto</span></div>
+            <div class="pay-item"><i class="fa-solid fa-qrcode" aria-hidden="true"></i><span>Pix</span></div>
+
+          </div>
+
+
+
+
+
+        </aside>
+
+
+        <div class="right-column">
+
+
+          <div class="email-assistant" aria-hidden="false" aria-label="Assistente de mensagens rápidas">
+            <label for="presetSelect">Entre em contato</label>
+            <select id="presetSelect" aria-label="Escolha um modelo">
+              <option value="">Escolha uma Categoria</option>
+              <option value="orçamento">Solicitar Orçamento — Eventos Exclusivos</option>
+              <option value="parceria">Proposta de Parceria — tenho interesse em revenda</option>
+              <option value="suporte">Suporte Técnico — problema no pedido / checkout</option>
+              <option value="ecommerce">Outro</option>
+            </select>
+
+            <label for="quickNote">Fale um pouco sobre</label>
+            <textarea id="quickNote" placeholder="Detalhe aqui"></textarea>
+
+            <button type="button" class="btn-fill" id="applyTemplate">Aplicar ao formulário</button>
+
+            <hr style="opacity:.06;border:none;margin:8px 0">
+
+            <label for="contactFrom">Seu e-mail</label>
+            <input id="contactFrom" type="email" placeholder="seu@exemplo.com" />
+
+            <small style="color:var(--muted);margin-top:8px;display:block; pointer-events: none;">Use os modelos para
+              agilizar o preenchimento do formulário.</small>
+          </div>
+
+
+          <form class="contact-form" id="contactForm" aria-label="Formulário de contato" novalidate>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="name">Nome</label>
+                <input id="name" name="name" type="text" placeholder="Seu nome" required />
+              </div>
+              <div class="field">
+                <label for="phone">Telefone</label>
+                <input id="phone" name="phone" type="tel" placeholder="+55 53 9 9..." />
+              </div>
+            </div>
+
+
+            <div class="field-row">
+              <div class="field">
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="email" placeholder="seu@exemplo.com" required />
+              </div>
+              <div class="field">
+                <label for="subject">Assunto</label>
+                <input id="subject" name="subject" type="text" placeholder="Assunto da mensagem" required />
+              </div>
+            </div>
+
+
+            <div class="field">
+              <label for="message">Mensagem</label>
+              <textarea id="message" name="message" placeholder="Escreva sua mensagem..." required></textarea>
+            </div>
+
+
+            <div class="actions">
+              <button type="submit" class="btn-submit" id="submitBtn">Enviar Mensagem</button>
+              <div class="status" id="formStatus" role="status" aria-live="polite"></div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+      <div class="signature" style="margin-top:16px;">
+        <a href="https://wa.me/53991719709" target="_blank" rel="noopener noreferrer"
+          aria-label="Assinatura do creador do site">
+          <img src="./Imagens/logo-gp.png" alt="Logo do desenvolvedor" loading="lazy">
+
+        </a>
+      </div>
+    </section>
+
+
+
+    <footer>
+      <div class="contact-button">
+        <a href="https://wa.me/53991719709" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

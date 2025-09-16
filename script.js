@@ -465,7 +465,7 @@ if (copyPhoneBtn) {
       } catch (e) {
         window.scrollTo({ top: sectionEl.offsetTop, behavior: scrollBehavior });
       }
-      sectionEl.focus({ preventScroll: true });
+      
     });
   }
 
@@ -493,9 +493,9 @@ if (copyPhoneBtn) {
         } catch (e) {
           window.scrollTo({ top: targetSection.offsetTop, behavior: scrollBehavior });
         }
-        targetSection.focus({ preventScroll: true });
+        
       });
-      AOS.refresh();
+      
     });
   });
 
@@ -567,9 +567,9 @@ if (copyPhoneBtn) {
         } catch (e) {
           window.scrollTo({ top: about.offsetTop, behavior: scrollBehavior });
         }
-        about.focus({ preventScroll: true });
       }, 100);
-      AOS.refresh();
+      
+    
     });
   }
 

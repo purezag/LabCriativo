@@ -617,6 +617,7 @@ contactFrom.addEventListener && contactFrom.addEventListener('input', (e) => {
         }
         targetSection.focus({ preventScroll: true });
       });
+      AOS.refresh();
     });
   });
 
@@ -632,9 +633,10 @@ contactFrom.addEventListener && contactFrom.addEventListener('input', (e) => {
 
       setTimeout(() => {
         goToSection(hero);
-      }, 300);
+      }, 10);
     });
   });
+  
 
   function closeAbout() {
     const about = document.querySelector('.about-section');
@@ -689,12 +691,14 @@ contactFrom.addEventListener && contactFrom.addEventListener('input', (e) => {
         }
         about.focus({ preventScroll: true });
       }, 100);
+      AOS.refresh();
     });
   }
 
   if (menuLinks.promocoes) {
     menuLinks.promocoes.addEventListener('click', (e) => {
       e.preventDefault();
+      closeAbout();
       const promotions = document.querySelector('.promotions-section');
       goToSection(promotions);
     });
@@ -702,7 +706,10 @@ contactFrom.addEventListener && contactFrom.addEventListener('input', (e) => {
   if (menuLinks.contato) {
     menuLinks.contato.addEventListener('click', (e) => {
       e.preventDefault();
+      closeAbout();
       goToSection(contact);
     });
   }
+
 })();
+

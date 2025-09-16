@@ -114,7 +114,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  background: linear-gradient(rgba(255, 255, 255, 0.397), rgba(255, 255, 255, 0.05));
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -136,11 +136,12 @@ body {
   & i {
     font-size: 1rem;
     color: #481a67;
-    transition: .5s;
+    transition: .1s;
+    
 
     &:hover {
       transition: .3s;
-      transform: scale(1.5);
+      transform: scale(.9) rotate(90deg);
     }
   }
 }
@@ -150,7 +151,7 @@ body {
   top: 25%;
   left: 5px;
   width: 200px;
-  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  background: linear-gradient(rgba(255, 255, 255, 0.397), rgba(255, 255, 255, 0.05));
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -176,7 +177,7 @@ body {
   width: 110px;
   display: flex;
   align-items: center;
-  color: #000000;
+  color: black;
   text-decoration: none;
   font-weight: 300;
   font-size: .8rem;
@@ -185,19 +186,14 @@ body {
 .hidden-left-bar a:hover {
   font-weight: 600;
   color: #481a67;
-  transition: .3s;
+  transition: .1s;
 }
 
 .hidden-left-bar i {
   font-size: .8rem;
   color: #481a67;
-  transition: .5s;
+  transition: .1s;
   padding: 1rem;
-
-  &:hover {
-    transform: scale(1.1) translateX(5px);
-    font-weight: 900;
-  }
 }
 
 .line {
@@ -231,11 +227,11 @@ body {
   & i {
     font-size: 1rem;
     color: #481a67;
-    transition: .5s;
+    transition: .1s;
 
     &:hover {
       transition: .3s;
-      transform: scale(1.5);
+      transform: scale(.9);
     }
   }
 }
@@ -265,7 +261,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  background: linear-gradient(rgba(255, 255, 255, 0.397), rgba(255, 255, 255, 0.05));
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   z-index: -1;
@@ -341,10 +337,6 @@ body {
   cursor: pointer;
   border-radius: 4px;
   transition: .5s;
-  &:hover {
-    transition: .3s;
-    transform: translateY(-.1rem) scale(1.05);
-  }
 }
 
 .quantity input {
@@ -360,11 +352,6 @@ body {
   color: #481a67;
   font-size: 1rem;
   cursor: pointer;
-
-  &:hover {
-    transition: .3s;
-    transform: translateY(-.1rem) scale(1.05);
-  }
 }
 
 .cart-footer {
@@ -389,12 +376,12 @@ body {
   border-radius: 6px;
   cursor: pointer;
   font-weight: bold;
-  transition: .5s;
+  transition: .1s;
 }
 
 #checkout-btn:hover {
-  transition: .3s ease-in-out;
-  transform: scale(1.05);
+  transition: .3s;
+  transform: scale(.9);
 }
 
 /* ==================================== */
@@ -681,7 +668,6 @@ body {
   min-height: 100vh;
   opacity: 0;
   animation: fadeInScale 2s ease-out forwards;
-  transition: 1s;
 }
 
 .hero-content {
@@ -904,12 +890,6 @@ article p {
 .info-home .selo img {
   width: 100px;
   padding-bottom: 1rem;
-  transition: .5s;
-
-  &:hover {
-    transition: .3s;
-    transform: scale(1.1);
-  }
 }
 
 .info-home .selo i {
@@ -1037,16 +1017,8 @@ article p {
   height: 100%;
   display: block; 
   margin: 0 auto;
-  border-radius: 32px;
-  transition: .5s;
-  filter: grayscale(100%);
+  border-radius: 32px; 
   object-fit: cover;
-}
-
-.carousel-item img:hover,
-.filter-header:hover {
-  transition: .3s;
-  filter: grayscale(0);
 }
 
 .carousel-control {
@@ -1059,7 +1031,7 @@ article p {
   cursor: pointer;
   z-index: 2;
   text-shadow: 0 2px 22px rgba(0, 0, 0, 0.2);
-  transition: .5s;
+  transition: .1s;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1067,8 +1039,8 @@ article p {
   height: 50px;
 
   &:hover {
-    transition: 1s;
-    transform: translateY(-1rem) scale(.95);
+    transition: .3s;
+    transform: translateY(-1.5rem) scale(.90);
     opacity: 1;
   }
 
@@ -1087,7 +1059,7 @@ article p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(46, 0, 48, 0.1), rgba(255, 255, 255, 0.05));
+  background: linear-gradient(rgba(255, 255, 255, 0.397), rgba(255, 255, 255, 0.05));
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   z-index: -1;
@@ -1174,7 +1146,7 @@ article p {
 
 .search-bar i:hover {
   color: #481a67;
-  transform: translateY(-50%) scale(1.2);
+  transform: translateY(-50%) scale(.9);
 }
 
 .icons-section {
@@ -1189,11 +1161,11 @@ article p {
   align-items: center;
   cursor: pointer;
   margin: 2rem;
-  transition: .5s;
+  transition: .1s;
 
   &:hover {
-    transition: .3s ease-in-out;
-    transform: translateY(-.5rem) scale(1.1);
+    transition: .3s;
+    transform: scale(.9);
   }
 }
 
@@ -1293,10 +1265,10 @@ article p {
   max-width: 200px;
   height: auto;
   cursor: pointer;
-  transition: .5s;
+  transition: .1s;
 
   &:hover {
-    transform: scale(1.1);
+    transform: scale(.9);
     transition: .3s;
   }
 }
@@ -1352,10 +1324,11 @@ article p {
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  transition: .5s;
+  transition: .1s;
 
   &:hover {
-    transform: translateY(-.2rem) scale(1.05);
+    transition: .3s;
+    transform: scale(.9);
   }
 }
 
@@ -1404,9 +1377,7 @@ article p {
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   transition: .5s;
-  position: absolute;
-  left: 50%;
-  bottom: 5%;
+  
 
   &:hover {
     transform: translateY(-.2rem) scale(1.05);
@@ -1415,9 +1386,10 @@ article p {
 
 .space {
   width: 100%;
-  height: 20vh;
+  height: 10vh;
   align-items: center;
   justify-content: center;
+  display: flex;
 }
 
 .icons-section {
@@ -1477,6 +1449,7 @@ article p {
   justify-content: center;
   border-start-end-radius: 16px;
   border-start-start-radius: 16px;
+  
 }
 
 .logo-contact {
@@ -1760,42 +1733,17 @@ form.contact-form {
 
 /* =====ABOUT-SECTION===== */
 .about-section {
-  display: none;
+  
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   min-height: 100vh;
   opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transform: scale(.5) start;
+  transition: opacity .5s ease, transform .5s ease;
   pointer-events: none;
   padding-top: 5rem;
-
-  .back-btn {
-    width: 100px;
-    height: 30px;
-    background: linear-gradient(166deg, rgba(72, 26, 103, 1) 0%, rgba(43, 0, 56, 1) 100%);
-    color: #fff;
-    border-radius: 5px;
-    font-weight: 500;
-    cursor: pointer;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-    transition: .5s;
-    position: absolute;
-    left: 50%;
-    bottom: 5%;
-
-    &:hover {
-      transform: translateY(-.2rem) scale(1.05);
-    }
-  }
-
-  .space {
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-  }
 
   .img-glass20 {
     width: 50px;
@@ -1870,6 +1818,7 @@ form.contact-form {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
+  transition: opacity 2s ease, transform 2s ease;
 }
 
 .block {

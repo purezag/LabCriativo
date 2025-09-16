@@ -832,7 +832,7 @@ body {
 
     &:hover,
     &:focus-visible {
-      background-color: #481a67;
+      background-color: transparent;
       color: white;
       outline: none;
     }
@@ -1150,8 +1150,8 @@ article p {
 }
 
 .icons-section .icon img {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
 }
 
 .icons-section .icon p {
@@ -1193,6 +1193,7 @@ article p {
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
   pointer-events: none;
+  color: #481a67;
 
   & strong {
     font-style: italic;
@@ -1417,8 +1418,7 @@ article p {
 }
 
 .logo-contact {
-  width: 500px;
-  padding: 5rem;
+  width: 300px;
 }
 
 .contact-grid {
@@ -1771,18 +1771,20 @@ form.contact-form {
 }
 
 .block {
+  width: 80%;
   display: grid;
   align-items: center;
   gap: 2rem;
   grid-template-columns: 1fr 1fr;
-
+  margin: auto;
 }
 
 .block img {
-  width: 100%;
-  border-radius: 1.5rem;
+  width: 50%;
+  border-radius: 3rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+  margin: auto;
 }
 
 .block img:hover {
@@ -1790,21 +1792,23 @@ form.contact-form {
 }
 
 .glass {
+  width: 80%;
   background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
   border: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border-radius: 1.5rem;
+  border-radius: 3rem;
   padding: 2rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin:  auto;
 }
 
 
 
 .block .text h1 {
   pointer-events: none;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   line-height: 1.2;
   margin-bottom: 1rem;
   color: #481a67;
@@ -1818,11 +1822,13 @@ form.contact-form {
 
 .block .text span {
   pointer-events: none;
-  font-size: 1.1rem;
+  font-size: .8rem;
   color: black;
   line-height: 1.6;
   text-align: right;
+  font-weight: 300;
 }
+
 
 .block-2 {
   grid-template-columns: 1fr 1fr;
@@ -1853,15 +1859,15 @@ footer {
   & i {
     color: #25D366;
     font-size: 2rem;
-    transition: .5s;
+    transition: .1s;
     opacity: 1;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border-radius: 50%;
 
     &:hover {
-      transition: 1s;
-      transform: translateY(-.5rem) scale(1.1);
+      transition: .3s;
+      transform: translateY(-5px);
     }
   }
 }

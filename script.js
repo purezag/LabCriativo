@@ -138,9 +138,7 @@ dots.forEach((dot, i) => {
 let startX = 0;
 let endX = 0;
 
-document.querySelector(".carousel").addEventListener("touchstart", e => {
-  startX = e.touches[0].clientX;
-});
+
 
 document.querySelector(".carousel").addEventListener("touchend", e => {
   endX = e.changedTouches[0].clientX;

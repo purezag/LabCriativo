@@ -1394,11 +1394,6 @@ article p {
   display: none !important;
 }
 
-.filter-section:focus {
-  outline: none;
-  box-shadow: transparent;
-}
-
 .line-cut {
   height: 10vh;
 }

@@ -181,12 +181,14 @@ body {
   text-decoration: none;
   font-weight: 300;
   font-size: .8rem;
+  transition: .1s;
 }
 
 .hidden-left-bar a:hover {
   font-weight: 600;
   color: #481a67;
-  transition: .1s;
+  transform: translateY(-4px);
+  transition: .3s;
 }
 
 .hidden-left-bar i {
@@ -230,8 +232,8 @@ body {
     transition: .1s;
 
     &:hover {
-      transition: .3s;
-      transform: scale(.9);
+      transform: translateY(-4px);
+  transition: .3s;
     }
   }
 }
@@ -302,7 +304,7 @@ body {
 .cart-item img {
   width: 60px;
   height: 60px;
-  border-radius: 8px;
+  border-radius: 16px;
   object-fit: cover;
 }
 
@@ -314,12 +316,13 @@ body {
   margin: 0;
   font-size: .9rem;
   color: #481a67;
+  font-weight: 900;
 }
 
 .cart-item-info .price {
   font-size: .8rem;
-  color: #000000;
-  font-weight: 700;
+  color: black;
+  font-weight: 500;
   pointer-events: none;
 }
 
@@ -331,11 +334,13 @@ body {
 }
 
 .qty-btn {
-  color: #481a67;
+  color: white;
+  background-color: #481a67;
   border: none;
-  padding: 2px 8px;
+  width: 25px;
+  height: 25px;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 8px;
   transition: .5s;
 }
 
@@ -355,8 +360,8 @@ body {
 }
 
 .cart-footer {
-  margin-top: 1rem;
   padding-top: 1rem;
+  
   border-top: 1px solid #eee;
   text-align: center;
   font-size: .9rem;
@@ -364,25 +369,27 @@ body {
 
   & p {
     pointer-events: none;
+    padding-bottom: .5rem;
   }
 }
 
 #checkout-btn {
   background: linear-gradient(166deg, rgba(72, 26, 103, 1) 0%, rgba(43, 0, 56, 1) 100%);
-  color: #fff;
-  border: none;
-  padding: 10px;
-  width: 50%;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   transition: .1s;
+  border-radius: 3rem;
+  padding: .5rem;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-4px);
+    transition: .3s;
+  }
 }
 
-#checkout-btn:hover {
-  transition: .3s;
-  transform: scale(.9);
-}
+
 
 /* ==================================== */
 
@@ -707,7 +714,7 @@ body {
     --carousel-width: min(80%,
       1200px);
     --carousel-item-width: 325px;
-    --carousel-item-height: 250px;
+    --carousel-item-height: 275px;
     --carousel-item-gap: 1rem;
     --clr-cta: rgb(0, 132, 209);
     position: relative;
@@ -736,7 +743,7 @@ body {
     bottom: 1px;
     left: calc(100% + var(--carousel-item-gap));
     width: 300px;
-    height: 250px;
+    height: 220px;
     grid-template-rows: 200px auto 1fr auto;
     gap: 0.25rem;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -888,8 +895,7 @@ article p {
 }
 
 .info-home .selo img {
-  width: 100px;
-  padding-bottom: 1rem;
+  width: 75px;
 }
 
 .info-home .selo i {
@@ -941,43 +947,6 @@ article p {
   color: #333;
 }
 
-.button-home {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 2rem;
-  width: 100%;
-  position: absolute;
-  z-index: 9999;
-  bottom: 15%;
-
-  & i {
-    color: #000000;
-    transition: 1s;
-    animation: animate 2s infinite;
-    position: relative;
-    z-index: 9999;
-  }
-
-  & p {
-    background: linear-gradient(270deg, #000000, transparent, #000000, transparent);
-    background-size: 1000% 800%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: moveGradient 15s ease infinite;
-    font-size: 1rem;
-    text-align: left;
-    font-weight: 100;
-    font-style: italic;
-  }
-
-  & strong {
-    font-weight: 900;
-    font-style: normal;
-  }
-}
-
 /* ==================================== */
 
 /* =====CAROUSEL===== */
@@ -1011,14 +980,23 @@ article p {
   z-index: 1;
 }
 
-.carousel-item img,
-.filter-header {
+.carousel-item img {
   width: 95%; 
   height: 100%;
   display: block; 
   margin: 0 auto;
   border-radius: 32px; 
   object-fit: cover;
+}
+
+.filter-header {
+  width: 95%; 
+  height: 100%;
+  display: block; 
+  margin: 0 auto;
+  border-radius: 32px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .carousel-control {
@@ -1151,8 +1129,9 @@ article p {
 
 .icons-section {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 3rem;
 }
 
 .icons-section .icon {
@@ -1160,12 +1139,13 @@ article p {
   flex-direction: column;
   align-items: center;
   cursor: pointer;
-  margin: 2rem;
+  gap: .5rem;
+  margin: .5rem;
   transition: .1s;
 
   &:hover {
+    transform: translateY(-4px);
     transition: .3s;
-    transform: scale(.9);
   }
 }
 
@@ -1175,10 +1155,11 @@ article p {
 }
 
 .icons-section .icon p {
-  font-weight: 900;
+  font-weight: 500;
   text-transform: uppercase;
-  font-size: .8rem;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  
+  font-size: .6rem;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   color: #481a67;
 }
 
@@ -1203,13 +1184,9 @@ article p {
 
 .promotions-section h1 {
   text-align: center;
+  padding-top: 2rem;
   margin-bottom: 2rem;
   font-size: 2rem;
-  background: linear-gradient(270deg, #000000, #000000, #481a67, #481a67);
-  background-size: 1000% 800%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: moveGradient 15s ease infinite;
   font-size: 1.5rem;
   font-weight: 200;
   font-style: normal;
@@ -1225,34 +1202,38 @@ article p {
 
 .shop {
   border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 10px;
+  padding: .5rem;
   width: 250px;
   text-align: center;
   align-items: center;
-  border-radius: 16px;
-  background: transparent;
-  background: linear-gradient(rgba(46, 0, 48, 0.5), rgba(255, 255, 255, 0.05));
+  border-radius: 3rem;
+  background: linear-gradient(rgba(255, 255, 255, 0.397), rgba(255, 255, 255, 0.05));
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  transition: .5s;
+  transition: .1s;
   margin: auto;
+  
+
+  &:hover {
+    transition: .3s;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+  }
 }
 
 .shop h2 {
-  padding-top: 1rem;
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   pointer-events: none;
-  color: White;
-  font-size: 1.2rem;
+  color: #481a67;
+  font-size: 1rem;
 }
 
 .shop span {
-  font-weight: 500;
+  font-weight: 300;
   font-size: .8rem;
   pointer-events: none;
-  color: white;
+  color: black;
 
   & strong {
     font-weight: 900;
@@ -1262,29 +1243,31 @@ article p {
 
 .shop img {
   width: 100%;
-  max-width: 200px;
   height: auto;
-  cursor: pointer;
   transition: .1s;
-
-  &:hover {
-    transform: scale(.9);
-    transition: .3s;
-  }
+  border-radius: 3rem;
 }
 
 .shop .old-price {
-  text-decoration: line-through;
+  padding-top: 1rem;
   font-size: .8rem;
-  color: white;
   opacity: .8;
   font-weight: 500;
   pointer-events: none;
-
+  
   & strong {
+    color: #481a67;
+    text-decoration: line-through;
     font-weight: 900;
     font-style: italic;
   }
+  & b {
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: 500;
+    color: #481a67;
+  }
+  
 }
 
 .shop .new-price {
@@ -1298,37 +1281,49 @@ article p {
     font-weight: 900;
     font-style: italic;
   }
-
-  & b {
-    font-size: .8rem;
-    font-weight: 500;
-  }
 }
+
 
 .card-buttons {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .card-buttons button {
   padding: 8px 12px;
   cursor: pointer;
   border: none;
-  border-radius: 5px;
+  border-radius: 3rem;
 }
 
 .buy-btn {
   background: linear-gradient(166deg, rgba(72, 26, 103, 1) 0%, rgba(43, 0, 56, 1) 100%);
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   transition: .1s;
+  border-radius: 50%;
 
   &:hover {
+    transform: translateY(-4px);
     transition: .3s;
-    transform: scale(.9);
+  }
+}
+
+.details-btn {
+  background: linear-gradient(166deg, rgb(241, 241, 241) 0%, rgb(255, 255, 255) 100%);
+  color: #481a67;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  transition: .1s;
+  font-weight: 100;
+
+  &:hover {
+    transform: translateY(-4px);
+    transition: .3s;
   }
 }
 
@@ -1341,15 +1336,6 @@ article p {
   opacity: 0;
   transform: translateY(16px);
   transition: opacity .36s ease, transform .36s ease;
-
-  & .icon {
-    padding-top: 10rem;
-  }
-
-  & .icons-section {
-    padding: 0;
-    margin: 0;
-  }
 }
 
 .filter-titles {
@@ -1371,7 +1357,7 @@ article p {
   height: 30px;
   background: linear-gradient(166deg, rgba(72, 26, 103, 1) 0%, rgba(43, 0, 56, 1) 100%);
   color: #fff;
-  border-radius: 5px;
+  border-radius: 3rem;
   font-weight: 500;
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -1380,7 +1366,8 @@ article p {
   
 
   &:hover {
-    transform: translateY(-.2rem) scale(1.05);
+    transform: translateY(-4px);
+    transition: .3s;
   }
 }
 
@@ -1390,24 +1377,6 @@ article p {
   align-items: center;
   justify-content: center;
   display: flex;
-}
-
-.icons-section {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 1.6rem 0;
-}
-
-.icon {
-  text-align: center;
-  cursor: pointer;
-  transition: transform .18s ease;
-}
-
-.icon:hover {
-  transform: translateY(-6px) scale(1.03);
 }
 
 .icon img {
@@ -1479,8 +1448,7 @@ article p {
 .socials a {
   display: inline-grid;
   place-items: center;
-  width: 44px;
-  height: 44px;
+  margin-right: 2rem;
   color: var(--accent);
   text-decoration: none;
   font-size: 18px;
@@ -1521,12 +1489,6 @@ article p {
   width: 20px;
   text-align: center;
   color: var(--accent);
-}
-
-.contact-link:hover {
-  background: rgba(255, 255, 255, 0.02);
-  color: #481a67;
-  transform: translateY(-4px);
 }
 
 .payments {
@@ -1605,6 +1567,10 @@ article p {
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+}
+.options {
+  border-radius: 2rem;
 }
 
 .email-assistant label {
@@ -1616,28 +1582,32 @@ article p {
 .email-assistant textarea,
 .email-assistant input {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.04);
   background: #71389728;
   color: #000000;
   padding: 8px;
   font-size: 14px;
+  border: 1px solid red;
 }
 
-.email-assistant .btn-fill {
+.email-assistant .btn-fill,
+.btn-submit {
+  width: 100%;
   margin-top: 6px;
   color: #08101a;
   padding: 8px 10px;
-  border-radius: 8px;
+  border-radius: 16px;
   cursor: pointer;
   background: linear-gradient(166deg, rgba(72, 26, 103, 1) 0%, rgba(43, 0, 56, 1) 100%);
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  transition: .5s;
+  transition: .1s;
 
   &:hover {
-    transform: translateY(-.2rem) scale(1.05);
+    transform: translateY(-4px);
+    transition: .3s;
   }
 }
 
@@ -1675,7 +1645,7 @@ form.contact-form {
 .field input,
 .field textarea {
   padding: 10px 12px;
-  border-radius: 8px;
+  border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.04);
   background: #71389728;
   color: black;
@@ -1692,22 +1662,6 @@ form.contact-form {
   gap: 10px;
   align-items: center;
   margin-top: 6px;
-}
-
-.btn-submit {
-  padding: 10px 16px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: 600;
-  background: linear-gradient(166deg, rgba(72, 26, 103, 1) 0%, rgba(43, 0, 56, 1) 100%);
-  color: white;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  transition: .5s;
-
-  &:hover {
-    transform: translateY(-.2rem) scale(1.05);
-  }
 }
 
 .btn-submit[disabled] {
@@ -2075,13 +2029,12 @@ footer {
   }
 
   .icon-section .icon {
-    margin: 1rem;
+    margin: 0;
   }
 
   .icons-section .icon img {
     width: 75px;
     height: 75px;
-    margin: 0;
   }
 
   .cards-container {
@@ -2219,14 +2172,23 @@ footer {
     display: none;
   }
 
+  .icons-section .icon p {
+    letter-spacing: 0;
+  }
+
   .icon-section .icon {
-    margin: 1rem;
+    margin: 0;
+  }
+  
+  .icons-section {
+    gap: 1rem;
+
   }
 
   .icons-section .icon img {
-    width: 75px;
-    height: 75px;
-    margin: 0;
+    width: 50px;
+    height: 50px;
+    
   }
 
   .cards-container {
@@ -2368,14 +2330,21 @@ footer {
     display: none;
   }
 
+  .icons-section .icon p {
+    letter-spacing: 0rem;
+  }
+
   .icon-section .icon {
-    margin: 1rem;
+    margin: .1rem;
+
+    & p {
+      letter-spacing: 0;
+    }
   }
 
   .icons-section .icon img {
-    width: 75px;
-    height: 75px;
-    margin: 0;
+    width: 50px;
+    height: 50px;
   }
 
   .cards-container {

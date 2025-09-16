@@ -159,24 +159,6 @@ const glasses = [
   { el: document.querySelector('.img-glass5'), depth: 40, baseRotate: -20, floatAmp: 7, floatSpeed: 0.0035, floatPhase: Math.random() * 1000 },
   { el: document.querySelector('.img-glass6'), depth: 50, baseRotate: 10, floatAmp: 9, floatSpeed: 0.0028, floatPhase: Math.random() * 1000 },
   { el: document.querySelector('.img-glass7'), depth: 30, baseRotate: -50, floatAmp: 5, floatSpeed: 0.0032, floatPhase: Math.random() * 1000 },
-  { el: document.querySelector('.img-glass8'), depth: 30, baseRotate: -5, floatAmp: 8, floatSpeed: 0.002, floatPhase: Math.random() * 1000 },
-  { el: document.querySelector('.img-glass9'), depth: 50, baseRotate: -10, floatAmp: 12, floatSpeed: 0.003, floatPhase: Math.random() * 1000 },
-  { el: document.querySelector('.img-glass10'), depth: 70, baseRotate: -15, floatAmp: 6, floatSpeed: 0.004, floatPhase: Math.random() * 1000 },
-  { el: document.querySelector('.img-glass11'), depth: 90, baseRotate: 30, floatAmp: 10, floatSpeed: 0.0025, floatPhase: Math.random() * 1000 },
-  { el: document.querySelector('.img-glass12'), depth: 40, baseRotate: -20, floatAmp: 7, floatSpeed: 0.0035, floatPhase: Math.random() * 1000 },
-  { el: document.querySelector('.img-glass13'), depth: 50, baseRotate: 10, floatAmp: 9, floatSpeed: 0.0028, floatPhase: Math.random() * 1000 },
-  { el: document.querySelector('.img-glass14'), depth: 30, baseRotate: -50, floatAmp: 5, floatSpeed: 0.0032, floatPhase: Math.random() * 1000 },
-  { el: document.querySelector('.img-glass15'), depth: 70, baseRotate: -15, floatAmp: 6, floatSpeed: 0.004, floatPhase: Math.random() * 1000 },
-  { el: document.querySelector('.img-glass16'), depth: 90, baseRotate: 30, floatAmp: 10, floatSpeed: 0.0025, floatPhase: Math.random() * 1000 },
-  { el: document.querySelector('.img-glass17'), depth: 40, baseRotate: -20, floatAmp: 7, floatSpeed: 0.0035, floatPhase: Math.random() * 1000 },
-  { el: document.querySelector('.img-glass18'), depth: 50, baseRotate: 10, floatAmp: 9, floatSpeed: 0.0028, floatPhase: Math.random() * 1000 },
-  { el: document.querySelector('.img-glass19'), depth: 30, baseRotate: -50, floatAmp: 5, floatSpeed: 0.0032, floatPhase: Math.random() * 1000 },
-  { el: document.querySelector('.img-glass20'), depth: 30, baseRotate: -50, floatAmp: 5, floatSpeed: 0.0032, floatPhase: Math.random() * 1000 },
-  { el: document.querySelector('.img-glass21'), depth: 70, baseRotate: -15, floatAmp: 6, floatSpeed: 0.004, floatPhase: Math.random() * 1000 },
-  { el: document.querySelector('.img-glass22'), depth: 90, baseRotate: 30, floatAmp: 10, floatSpeed: 0.0025, floatPhase: Math.random() * 1000 },
-  { el: document.querySelector('.img-glass23'), depth: 40, baseRotate: -20, floatAmp: 7, floatSpeed: 0.0035, floatPhase: Math.random() * 1000 },
-  { el: document.querySelector('.img-glass24'), depth: 50, baseRotate: 10, floatAmp: 9, floatSpeed: 0.0028, floatPhase: Math.random() * 1000 },
-  { el: document.querySelector('.img-glass25'), depth: 30, baseRotate: -50, floatAmp: 5, floatSpeed: 0.0032, floatPhase: Math.random() * 1000 },
 ];
 
 let targetX = 0, targetY = 0;
@@ -427,108 +409,6 @@ if (copyPhoneBtn) {
     }
   });
 }
-
-const presetSelect = $('#presetSelect');
-const quickNote = $('#quickNote');
-const applyBtn = $('#applyTemplate');
-applyBtn.addEventListener('click', () => {
-  const preset = presetSelect.value;
-  const note = quickNote.value.trim();
-  const subjectInput = $('#subject');
-  const messageInput = $('#message');
-  if (preset === 'orçamento') {
-    subjectInput.value = 'Solicitação de Orçamento — Site Institucional';
-    messageInput.value = `Olá!\n\nGostaria de receber um orçamento para um site institucional.\n\nInformações adicionais:\n${note || '-'}\n\nObrigado.`;
-  } else if (preset === 'ecommerce') {
-    subjectInput.value = 'Solicitação — Loja Virtual / WooCommerce';
-    messageInput.value = `Olá!\n\nTenho interesse em desenvolver/integrar uma loja virtual com WooCommerce.\n\nDetalhes:\n${note || '-'}\n\nAguardo contato.`;
-  } else if (preset === 'parceria') {
-    subjectInput.value = 'Proposta de Parceria';
-    messageInput.value = `Olá!\n\nTenho uma proposta de parceria e gostaria de conversar.\n\nResumo:\n${note || '-'}\n\nAtenciosamente.`;
-  } else if (preset === 'suporte') {
-    subjectInput.value = 'Suporte Técnico — Pedido/Checkout';
-    messageInput.value = `Olá!\n\nPreciso de suporte técnico. Detalhes do problema:\n${note || '-'}\n\nID / Pedido: (se aplicável)\n`;
-  } else {
-    if (note) messageInput.value = note;
-  }
-  $('#name').focus();
-});
-
-const form = $('#contactForm');
-const submitBtn = $('#submitBtn');
-const statusEl = $('#formStatus');
-
-form.addEventListener('submit', async (evt) => {
-  evt.preventDefault();
-
-  const data = {
-    name: form.name.value.trim(),
-    phone: form.phone.value.trim(),
-    email: form.email.value.trim(),
-    subject: form.subject.value.trim(),
-    message: form.message.value.trim()
-  };
-
-  if (!data.name || !data.email || !data.subject || !data.message) {
-    statusEl.textContent = 'Por favor preencha os campos obrigatórios (nome, e-mail, assunto e mensagem).';
-    return;
-  }
-
-  submitBtn.disabled = true;
-  const oldText = submitBtn.textContent;
-  submitBtn.textContent = 'Enviando...';
-  statusEl.textContent = '';
-
-  let sent = false;
-  if (FORM_ENDPOINT) {
-    try {
-      const resp = await fetch(FORM_ENDPOINT, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
-      });
-      if (resp.ok) {
-        sent = true;
-        statusEl.textContent = 'Mensagem enviada com sucesso! Obrigado.';
-        form.reset();
-      } else {
-        const text = await resp.text();
-        console.warn('endpoint error', resp.status, text);
-      }
-    } catch (err) {
-      console.warn('Erro ao enviar para endpoint:', err);
-    }
-  }
-
-  if (!sent) {
-    try {
-      const mailTo = 'teuemail@mail.com';
-      const subject = encodeURIComponent(data.subject);
-      const bodyLines = [
-        `Nome: ${data.name}`,
-        `Telefone: ${data.phone}`,
-        `E-mail do remetente: ${data.email}`,
-        '',
-        'Mensagem:',
-        data.message
-      ];
-      const body = encodeURIComponent(bodyLines.join('\n'));
-      window.location.href = `mailto:${mailTo}?subject=${subject}&body=${body}`;
-      statusEl.textContent = 'Abrindo seu cliente de e-mail...';
-      form.reset();
-    } catch (e) {
-      statusEl.textContent = 'Não foi possível abrir o cliente de e-mail automaticamente. Copie e envie manualmente.';
-    }
-  }
-
-  submitBtn.disabled = false;
-  submitBtn.textContent = oldText;
-});
-
-const contactFrom = $('#contactFrom');
-contactFrom.addEventListener && contactFrom.addEventListener('input', (e) => {
-  $('#email').value = e.target.value;
-});
 
 (function () {
   const segmentToSection = {

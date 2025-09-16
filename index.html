@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <div class="bg-blobs" aria-hidden="true">
     <div class="blob b1"></div>
     <div class="blob b2"></div>
@@ -118,15 +118,7 @@
     <section class="hero" id="hero">
 
 
-      <div class="backround-glass">
-        <img class="img-glass1" src="./Imagens/glass-blue.webp" alt="">
-        <img class="img-glass2" src="./Imagens/glass-orange.webp" alt="">
-        <img class="img-glass3" src="./Imagens/glass-purple.webp" alt="">
-        <img class="img-glass5" src="./Imagens/glass-blue.webp" alt="">
-        <img class="img-glass6" src="./Imagens/glass-purple.webp" alt="">
-        <img class="img-glass7" src="./Imagens/glass-orange.webp" alt="">
-
-      </div>
+     
 
       <div class="hero-content">
 
@@ -1496,7 +1488,16 @@
 
   <script src="script.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+    AOS.init({
+    duration: 1000, // animation duration in ms
+    once: true,     // whether animation happens only once while scrolling down
+  });
   
+  AOS.refresh();
+  </script>
 
 </body>
 

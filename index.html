@@ -5,11 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Company | Best Crafts E-commerce </title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      
   
-
     <style>
 
       @font-face {
@@ -36,15 +32,7 @@
     font-display: swap;
   }
 
-  @font-face {
-  font-family: "Font Awesome 6 Brands";
-  src: url("./assets/fontawesome/webfonts/fa-brands-400.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* FA Solid */
+ /* 1️⃣ @font-face - Fontes FA */
 @font-face {
   font-family: "Font Awesome 6 Free";
   src: url("./assets/fontawesome/webfonts/fa-solid-900.woff2") format("woff2");
@@ -53,7 +41,6 @@
   font-display: swap;
 }
 
-/* FA Regular */
 @font-face {
   font-family: "Font Awesome 6 Free";
   src: url("./assets/fontawesome/webfonts/fa-regular-400.woff2") format("woff2");
@@ -61,7 +48,60 @@
   font-style: normal;
   font-display: swap;
 }
-      
+
+@font-face {
+  font-family: "Font Awesome 6 Brands";
+  src: url("./assets/fontawesome/webfonts/fa-brands-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 2️⃣ Base para todos os ícones */
+.fa {
+  display: inline-block;
+  font-style: normal !important; /* força normal */
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+/* 3️⃣ Pesos das classes */
+.fa-solid { font-family: "Font Awesome 6 Free"; font-weight: 900; font-style: normal;}
+.fa-regular { font-family: "Font Awesome 6 Free"; font-weight: 400; font-style: normal;}
+.fa-brands { font-family: "Font Awesome 6 Brands"; font-weight: 400;font-style: normal; }
+
+/* 4️⃣ Conteúdo dos ícones usados */
+.fa-solid.fa-bars:before { content: "\f0c9"; }
+.fa-solid.fa-house-chimney:before { content: "\f015"; }
+.fa-solid.fa-users:before { content: "\f0c0"; }
+.fa-solid.fa-headset:before { content: "\f590"; }
+.fa-solid.fa-user:before { content: "\f007"; }
+.fa-solid.fa-up-right-from-square:before { content: "\f35d"; }
+.fa-solid.fa-arrow-right-from-bracket:before { content: "\f08b"; }
+.fa-solid.fa-bag-shopping:before { content: "\f290"; }
+.fa-solid.fa-star:before { content: "\f005"; }
+.fa-solid.fa-star-half:before { content: "\f089"; }
+.fa-solid.fa-angle-left:before { content: "\f104"; }
+.fa-solid.fa-angle-right:before { content: "\f105"; }
+.fa-solid.fa-magnifying-glass:before { content: "\f002"; }
+.fa-solid.fa-phone:before { content: "\f095"; }
+.fa-solid.fa-envelope:before { content: "\f0e0"; }
+.fa-solid.fa-location-dot:before { content: "\f3c5"; }
+.fa-solid.fa-barcode:before { content: "\f02a"; }
+.fa-solid.fa-qrcode:before { content: "\f029"; }
+.fa-solid.fa-store:before { content: "\f54e"; } /* ícone adicionado */
+
+/* FA Brands */
+.fa-brands.fa-cc-visa:before { content: "\f1f0"; }
+.fa-brands.fa-cc-mastercard:before { content: "\f1f1"; }
+.fa-brands.fa-cc-paypal:before { content: "\f1f4"; }
+.fa-brands.fa-square-whatsapp:before { content: "\f232"; }
+.fa-brands.fa-instagram:before { content: "\f16d"; }
+.fa-brands.fa-facebook:before { content: "\f09a"; }
+.fa-brands.fa-x-twitter:before { content: "\f081"; }
+
+
       * {
         margin: 0;
         padding: 0;
@@ -1868,9 +1908,10 @@ footer {
     font-size: 0.95rem;
   }
 }
+
   </style>
 
-  <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css" media="print" onload="this.media='all'">
+  
 <link rel="stylesheet" href="./assets/aos/aos.css" media="print" onload="this.media='all'">
 <noscript>
   <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">

@@ -138,7 +138,50 @@ dots.forEach((dot, i) => {
 let startX = 0;
 let endX = 0;
 
+// ================================
 
+const glasses = [
+  { el: document.querySelector('.img-glass1'), depth: 30, baseRotate: -5, floatAmp: 8, floatSpeed: 0.002, floatPhase: Math.random() * 1000 },
+  { el: document.querySelector('.img-glass2'), depth: 50, baseRotate: -10, floatAmp: 12, floatSpeed: 0.003, floatPhase: Math.random() * 1000 },
+  { el: document.querySelector('.img-glass3'), depth: 70, baseRotate: -15, floatAmp: 6, floatSpeed: 0.004, floatPhase: Math.random() * 1000 },
+  { el: document.querySelector('.img-glass4'), depth: 40, baseRotate: 0, floatAmp: 2, floatSpeed: 0.0025, floatPhase: Math.random() * 1000 },
+  { el: document.querySelector('.img-glass5'), depth: 40, baseRotate: -20, floatAmp: 7, floatSpeed: 0.0035, floatPhase: Math.random() * 1000 },
+  { el: document.querySelector('.img-glass6'), depth: 50, baseRotate: 10, floatAmp: 9, floatSpeed: 0.0028, floatPhase: Math.random() * 1000 },
+  { el: document.querySelector('.img-glass7'), depth: 30, baseRotate: -50, floatAmp: 5, floatSpeed: 0.0032, floatPhase: Math.random() * 1000 },
+];
+
+let targetX = 0, targetY = 0;
+let currentX = 0, currentY = 0;
+const friction = 0.05;
+let time = 0;
+
+window.addEventListener('mousemove', (e) => {
+  const x = e.clientX / window.innerWidth - 0.5;
+  const y = e.clientY / window.innerHeight - 0.5;
+  targetX = -x;
+  targetY = -y;
+});
+
+function animate() {
+  currentX += (targetX - currentX) * friction;
+  currentY += (targetY - currentY) * friction;
+
+  time += 1;
+
+  glasses.forEach(glass => {
+    const moveX = currentX * glass.depth;
+    const moveY = currentY * glass.depth + Math.sin(time * glass.floatSpeed + glass.floatPhase) * glass.floatAmp;
+
+    const rotateDeg = glass.baseRotate + currentX * 15 + Math.sin(time * glass.floatSpeed + glass.floatPhase) * 5;
+    glass.el.style.transform = `translate(${moveX}px, ${moveY}px) rotate(${rotateDeg}deg)`;
+  });
+
+  requestAnimationFrame(animate);
+}
+
+animate();
+
+// =============================
 
 document.querySelector(".carousel").addEventListener("touchend", e => {
   endX = e.changedTouches[0].clientX;

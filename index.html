@@ -139,12 +139,11 @@ html {
 
   .glass-base{
     position:fixed; inset:0;
-    filter: blur(120px);
+   
     z-index:-9999;
     pointer-events:none;
     background: rgba(255,255,255,0.55);
-    backdrop-filter: blur(20px) saturate(120%);
-    -webkit-backdrop-filter: blur(20px) saturate(120%);
+    
   }
 
   .blob{
@@ -546,8 +545,7 @@ body {
 
   pointer-events: none;
   user-select: none;
-  position: relative;
-  z-index: 1; /* atrás do conteúdo */
+  z-index: 0; /* atrás do conteúdo */
   -webkit-font-smoothing: antialiased;
   font-family: 'Inter', Arial, sans-serif;
 }
@@ -1986,7 +1984,15 @@ footer .contact-button svg:hover {
   <link rel="stylesheet" href="./assets/aos/aos.css">
 </noscript>
 
-
+<div class="bg-blobs" aria-hidden="true">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+    <div class="blob b4"></div>
+    <div class="blob b5"></div>
+    <div class="blob b6"></div>
+  </div>
+  <div class="glass-base" aria-hidden="true"></div>
 
 </head>
 <body>
@@ -2090,8 +2096,8 @@ footer .contact-button svg:hover {
     </section>
   </header>
   <main>
-    <h1 class="hero-bg">Transforme ideias</h1>
     <section class="hero" id="hero">
+      <h1 class="hero-bg">Transforme ideias</h1>
       <div class="hero-content">
 
   <div class="logos">
@@ -2474,17 +2480,6 @@ decoding="async">
         </a>
       </div>
     </section>
-
-    <div class="bg-blobs" aria-hidden="true">
-    <div class="blob b1"></div>
-    <div class="blob b2"></div>
-    <div class="blob b3"></div>
-    <div class="blob b4"></div>
-    <div class="blob b5"></div>
-    <div class="blob b6"></div>
-  </div>
-  <div class="glass-base" aria-hidden="true"></div>
-
     <footer>
   <div class="contact-button">
     <a href="https://wa.me/53991719709" target="_blank">

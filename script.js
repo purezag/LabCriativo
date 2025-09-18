@@ -146,8 +146,6 @@ const glasses = [
   { el: document.querySelector('.img-glass3'), depth: 70, baseRotate: -15, floatAmp: 6, floatSpeed: 0.004, floatPhase: Math.random() * 1000 },
   { el: document.querySelector('.img-glass4'), depth: 40, baseRotate: 0, floatAmp: 2, floatSpeed: 0.0025, floatPhase: Math.random() * 1000 },
   { el: document.querySelector('.img-glass5'), depth: 40, baseRotate: -20, floatAmp: 7, floatSpeed: 0.0035, floatPhase: Math.random() * 1000 },
-  { el: document.querySelector('.img-glass6'), depth: 50, baseRotate: 10, floatAmp: 9, floatSpeed: 0.0028, floatPhase: Math.random() * 1000 },
-  { el: document.querySelector('.img-glass7'), depth: 30, baseRotate: -50, floatAmp: 5, floatSpeed: 0.0032, floatPhase: Math.random() * 1000 },
 ];
 
 let targetX = 0, targetY = 0;

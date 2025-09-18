@@ -144,13 +144,11 @@ html {
     background: rgba(255,255,255,0.55);
     backdrop-filter: blur(20px) saturate(120%);
     -webkit-backdrop-filter: blur(20px) saturate(120%);
-    box-shadow: inset 0 200px 300px rgba(255,255,255,0.06);
   }
 
   .blob{
     position:absolute;
     border-radius:50%;
-    filter: blur(120px);
     opacity:0.78;
     mix-blend-mode: screen;
     transform: translate3d(0,0,0);
@@ -451,28 +449,20 @@ body {
 
 .img-glass1 {
   width: 90px;
-  position:fixed;
   top: 65%;
   left: 50%;
-  z-index: -1;
-  filter: blur(5px);
 }
 
 .img-glass2 {
   width: 80px;
-  position: fixed;
-  top: 45%;
-  left: 75%;
-  z-index: -1;
-  filter: blur(7px);
+  top: 55%;
+  left: 15%;
 }
 
 .img-glass3 {
   width: 120px;
-  position: fixed;
   top: 15%;
   left: 75%;
-  z-index: -1;
 }
 
 .img-glass4 {
@@ -482,29 +472,18 @@ body {
 
 .img-glass5 {
   width: 95px;
-  position: fixed;
   top: 80%;
   left: 80%;
-  z-index: -1;
-  filter: blur(4px);
 }
 
-.img-glass6 {
-  width: 50px;
-  position: fixed;
-  top: 80%;
-  left: 30%;
-  z-index: -1;
-  filter: blur(10px);
-}
-
-.img-glass7 {
-  width: 50px;
-  position: fixed;
-  top: 20%;
-  left: 15%;
-  z-index: -1;
-  filter: blur(15px);
+.img-glass1,
+.img-glass2,
+.img-glass3,
+.img-glass5 {
+  position: fixed;   /* todos fixos */
+  z-index: -5;       /* não precisa ser -9999, basta estar atrás */
+  will-change: transform;
+  pointer-events: none; /* garante que não bloqueiem cliques */
 }
 
 /* =====HERO-SECTION===== */
@@ -1575,8 +1554,8 @@ footer .contact-button svg:hover {
   }
 
   .icons-section .icon img {
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
   }
 
   .cards-container {
@@ -1925,18 +1904,18 @@ footer .contact-button svg:hover {
   <link rel="stylesheet" href="./assets/aos/aos.css">
 </noscript>
 
-<div class="bg-blobs" aria-hidden="true">
-    <div class="blob b1"></div>
-    <div class="blob b2"></div>
-    <div class="blob b3"></div>
-    <div class="blob b4"></div>
-    <div class="blob b5"></div>
-    <div class="blob b6"></div>
-  </div>
-  <div class="glass-base" aria-hidden="true"></div>
 
 </head>
 <body>
+  <div class="bg-blobs" aria-hidden="true">
+      <div class="blob b1"></div>
+      <div class="blob b2"></div>
+      <div class="blob b3"></div>
+      <div class="blob b4"></div>
+      <div class="blob b5"></div>
+      <div class="blob b6"></div>
+    </div>
+    <div class="glass-base" aria-hidden="true"></div>
   <header>
     <section class="stick-bar">
       <div class="left-bar">
@@ -2032,8 +2011,6 @@ footer .contact-button svg:hover {
         <img class="img-glass2" src="./Imagens/glass-orange.webp" alt="">
         <img class="img-glass3" src="./Imagens/glass-purple.webp" alt="">
         <img class="img-glass5" src="./Imagens/glass-blue.webp" alt="">
-        <img class="img-glass6" src="./Imagens/glass-purple.webp" alt="">
-        <img class="img-glass7" src="./Imagens/glass-orange.webp" alt="">
       </div>
       <div class="hero-content">
         <div class="logos">
@@ -2181,7 +2158,7 @@ footer .contact-button svg:hover {
     </section>
     <section class="home-page">
       <div class="carousel">
-        <div class="carousel-item active" data-aos="fade-right">
+        <div class="carousel-item active">
           <a href="#">
             <picture>
               <source loading="lazy" media="(max-width: 480px)" srcset="./Imagens/banner-teste.webp">

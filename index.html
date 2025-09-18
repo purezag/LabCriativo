@@ -179,15 +179,15 @@ body {
   font-display: swap;
 }
 
-.bg-img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.welcome {
+  font-size: 1rem;
+  color: white;
+  margin: 0;
+  font-weight: 300;
+  font-style: italic;
 
-  & img {
-    width: 100%;
-    height: 100%;
+  & strong {
+    font-weight: 900;
   }
 }
 
@@ -525,13 +525,12 @@ body {
 
   & .logo {
     width: 300px;
-    height: 80px;
-    
+    height: 120px;
   }
 }
 
 .logos {
-  padding-top: 5rem;
+  padding-top: 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1569,6 +1568,10 @@ footer .contact-button svg:hover {
     }
   }
 
+  .logos {
+    padding-top: 3rem;
+  }
+
   .hero-content {
     justify-content: space-between;
   }
@@ -1701,6 +1704,7 @@ footer .contact-button svg:hover {
   }
 
   .logos {
+    padding-top: 0;
 
     & .logo {
       width: 200px;
@@ -1853,6 +1857,8 @@ footer .contact-button svg:hover {
 
   .logos {
 
+    padding-top: 3rem;
+
     & .img-glass4 {
       width: 80px;
       height: 100px;
@@ -1976,9 +1982,7 @@ footer .contact-button svg:hover {
 
 </head>
 <body>
-  <div class="bg-img">
-    <img src="./Imagens/bg-img.webp" alt="Background">
-  </div>
+  
   <div class="background-glass">
         <img loading="lazy" class="img-glass1" src="./Imagens/glass-blue.webp" alt="" role="presentation"
   aria-hidden="true">
@@ -2081,6 +2085,7 @@ footer .contact-button svg:hover {
     <section class="hero" id="hero">
       
       <div class="hero-content">
+
         <div class="logos">
           <img class="img-glass4" src="./Imagens/logo.webp" alt="" fetchpriority="high"
   loading="eager"
@@ -2231,10 +2236,10 @@ footer .contact-button svg:hover {
         <div class="carousel-item active">
           <a href="#">
             <picture>
-              <source loading="lazy" media="(max-width: 480px)" srcset="./Imagens/banner-teste.webp">
-              <source loading="lazy" media="(max-width: 768px)" srcset="./Imagens/banner-teste.webp">
-              <source loading="lazy" media="(max-width: 1200px)" srcset="./Imagens/banner-teste.webp">
-              <img loading="lazy" src="./Imagens/banner-teste.webp" alt="Imagem 1">
+              <source loading="lazy" media="(max-width: 480px)" srcset="./Imagens/banner-teste.jpg">
+              <source loading="lazy" media="(max-width: 768px)" srcset="./Imagens/banner-teste.jpg">
+              <source loading="lazy" media="(max-width: 1200px)" srcset="./Imagens/banner-teste.jpg">
+              <img loading="lazy" src="./Imagens/banner-teste.jpg" alt="Imagem 1">
             </picture>
           </a>
         </div>
@@ -2242,10 +2247,10 @@ footer .contact-button svg:hover {
           <a href="#">
             <picture>
               <picture>
-                <source loading="lazy" media="(max-width: 480px)" srcset="./Imagens/banner-teste.webp">
-                <source loading="lazy" media="(max-width: 768px)" srcset="./Imagens/banner-teste.webp">
-                <source loading="lazy" media="(max-width: 1200px)" srcset="./Imagens/banner-teste.webp">
-                <img loading="lazy" src="./Imagens/banner-teste.webp" alt="Imagem 1">
+                <source loading="lazy" media="(max-width: 480px)" srcset="./Imagens/banner-teste.jpg">
+                <source loading="lazy" media="(max-width: 768px)" srcset="./Imagens/banner-teste.jpg">
+                <source loading="lazy" media="(max-width: 1200px)" srcset="./Imagens/banner-teste.jpg">
+                <img loading="lazy" src="./Imagens/banner-teste.jpg" alt="Imagem 1">
               </picture>
             </picture>
           </a>
@@ -2254,10 +2259,10 @@ footer .contact-button svg:hover {
           <a href="#">
             <picture>
               <picture>
-                <source loading="lazy" media="(max-width: 480px)" srcset="./Imagens/banner-teste.webp">
-                <source loading="lazy" media="(max-width: 768px)" srcset="./Imagens/banner-teste.webp">
-                <source loading="lazy" media="(max-width: 1200px)" srcset="./Imagens/banner-teste.webp">
-                <img loading="lazy" src="./Imagens/banner-teste.webp" alt="Imagem 1">
+                <source loading="lazy" media="(max-width: 480px)" srcset="./Imagens/banner-teste.jpg">
+                <source loading="lazy" media="(max-width: 768px)" srcset="./Imagens/banner-teste.jpg">
+                <source loading="lazy" media="(max-width: 1200px)" srcset="./Imagens/banner-teste.jpg">
+                <img loading="lazy" src="./Imagens/banner-teste.jpg" alt="Imagem 1">
               </picture>
             </picture>
           </a>
@@ -2270,14 +2275,14 @@ footer .contact-button svg:hover {
           <span class="dot"></span>
         </div>
       </div>
-      <div class="main-content">
-        <div class="search-section" data-aos="fade-left">
-          <h1></h1>
-          <div class="search-bar">
-            <input type="text" id="searchInput" required placeholder="O que tu procuras?">
-            <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
-          </div>
-        </div>
+       <div class="main-content">
+    <div class="search-section" data-aos="fade-left">
+      <h1></h1>
+      <div class="search-bar">
+        <input type="text" id="searchInput" required placeholder="O que tu procuras?">
+        <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+      </div>
+    </div>
         <div class="icons-section" data-aos="fade-up">
           <div class="icon" data-segment="canecas">
             <img loading="lazy" src="./Imagens/mugs.png" alt="">
@@ -2296,780 +2301,65 @@ footer .contact-button svg:hover {
             <p>Diversos</p>
           </div>
         </div>
-        <div class="promotions-section" data-aos="fade-right">
-          <h1><strong>Promoções</strong> da semana <strong>para você</strong></h1>
-          <div class="cards-container">
-            <div class="shop">
-              <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-              <div class="info-product">
-                <h2>Item Numero Um</h2>
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-              </div>
-              <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-              <p class="new-price">R$ <strong>35,00</strong></p>
-              <div class="card-buttons">
-                <button class="details-btn">ver mais</button>
-                <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-              </div>
-            </div>
-            <div class="shop">
-              <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-              <div class="info-product">
-                <h2>Item Numero Um</h2>
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-              </div>
-              <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-              <p class="new-price">R$ <strong>35,00</strong></p>
-              <div class="card-buttons">
-                <button class="details-btn">ver mais</button>
-                <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-              </div>
-            </div>
-            <div class="shop">
-              <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-              <div class="info-product">
-                <h2>Item Numero Um</h2>
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-              </div>
-              <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-              <p class="new-price">R$ <strong>35,00</strong></p>
-              <div class="card-buttons">
-                <button class="details-btn">ver mais</button>
-                <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-              </div>
-            </div>
-            <div class="shop">
-              <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-              <div class="info-product">
-                <h2>Item Numero Um</h2>
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-              </div>
-              <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-              <p class="new-price">R$ <strong>35,00</strong></p>
-              <div class="card-buttons">
-                <button class="details-btn">ver mais</button>
-                <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-              </div>
-            </div>
-            <div class="shop">
-              <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-              <div class="info-product">
-                <h2>Item Numero Um</h2>
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-              </div>
-              <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-              <p class="new-price">R$ <strong>35,00</strong></p>
-              <div class="card-buttons">
-                <button class="details-btn">ver mais</button>
-                <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-              </div>
-            </div>
-            <div class="shop">
-              <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-              <div class="info-product">
-                <h2>Item Numero Um</h2>
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-              </div>
-              <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-              <p class="new-price">R$ <strong>35,00</strong></p>
-              <div class="card-buttons">
-                <button class="details-btn">ver mais</button>
-                <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-              </div>
-            </div>
-          </div>
-          <div class="line-cut"></div>
-          <div class="icons-section" data-aos="fade-up">
-          <div class="icon" data-segment="canecas">
-            <img loading="lazy" src="./Imagens/mugs.png" alt="">
-            <p>Canecas</p>
-          </div>
-          <div class="icon" data-segment="roupas">
-            <img loading="lazy" src="./Imagens/clothes.png" alt="">
-            <p>Roupas</p>
-          </div>
-          <div class="icon" data-segment="garrafas">
-            <img loading="lazy" src="./Imagens/bottles.png" alt="">
-            <p>Garrafas</p>
-          </div>
-          <div class="icon" data-segment="misc">
-            <img loading="lazy" src="./Imagens/misc.png" alt="">
-            <p>Diversos</p>
-          </div>
-        </div>
-          <div class="line-cut"></div>
-        </div>
+<div class="promotions-section" data-aos="fade-right">
+  <h1><strong>Promoções</strong> da semana <strong>para você</strong></h1>
+  <div class="cards-container"></div>
+  <div class="line-cut"></div>
+  <div class="icons-section" data-aos="fade-up">
+    <div class="icon" data-segment="canecas"><img loading="lazy" src="./Imagens/mugs.png" alt=""><p>Canecas</p></div>
+    <div class="icon" data-segment="roupas"><img loading="lazy" src="./Imagens/clothes.png" alt=""><p>Roupas</p></div>
+    <div class="icon" data-segment="garrafas"><img loading="lazy" src="./Imagens/bottles.png" alt=""><p>Garrafas</p></div>
+    <div class="icon" data-segment="misc"><img loading="lazy" src="./Imagens/misc.png" alt=""><p>Diversos</p></div>
+  </div>
+  <div class="line-cut"></div>
+</div>
     </section>
-    <section class="filter-section section-mug" tabindex="-1" aria-hidden="true">
-      <a href="#">
-        <img loading="lazy" src="./Imagens/banner-teste.webp" alt="Imagem 1" class="filter-header">
-      </a>
-      <div class="promotions-section">
-        <h1 class="filter-titles"><strong>Canecas</strong> Personalizáveis</h1>
-      </div>
-      <div class="cards-container">
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp " alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-      </div>
-      <div class="space">
-        <button class="back-btn">Voltar</button>
-      </div>
-    </section>
-    <section class="filter-section section-clothes" tabindex="-1" aria-hidden="true">
-      <img loading="lazy" src="./Imagens/banner-teste.webp" alt="Imagem 1" class="filter-header">
-      <div class="promotions-section">
-        <h1 class="filter-titles"><strong>Roupas</strong> Personalizáveis</h1>
-      </div>
-      <div class="cards-container">
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-      </div>
-      <div class="space">
-        <button class="back-btn">Voltar</button>
-      </div>
-    </section>
-    <section class="filter-section section-bottles" tabindex="-1" aria-hidden="true">
-      <img loading="lazy" src="./Imagens/banner-teste.webp" alt="Imagem 1" class="filter-header">
-      <div class="promotions-section">
-        <h1 class="filter-titles"><strong>Garrafas</strong> Personalizaveis</h1>
-      </div>
-      <div class="cards-container">
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-      </div>
-      <div class="space">
-        <button class="back-btn">Voltar</button>
-      </div>
-    </section>
-    <section class="filter-section section-misc" tabindex="-1" aria-hidden="true">
-      <img loading="lazy" src="./Imagens/banner-teste.webp" alt="Imagem 1" class="filter-header">
-      <div class="promotions-section">
-        <h1 class="filter-titles"><strong>Itens</strong> Diversos Personalizaveis</h1>
-      </div>
-      <div class="cards-container">
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-        <div class="shop">
-          <img loading="lazy" src="./Imagens/orange-mug.webp" alt="Caneca Mágica">
-          <div class="info-product">
-            <h2>Item Numero Um</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-          </div>
-          <p class="old-price"><b>a partir de</b> <strong>R$50,00</strong></p>
-          <p class="new-price">R$ <strong>35,00</strong></p>
-          <div class="card-buttons">
-            <button class="details-btn">ver mais</button>
-            <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-          </div>
-        </div>
-      </div>
-      <div class="space">
-        <button class="back-btn">Voltar</button>
-      </div>
-    </section>
+
+<!-- Filtros -->
+<section class="filter-section section-mug" tabindex="-1" aria-hidden="true">
+  <a href="#"><img loading="lazy" src="./Imagens/banner-teste.jpg" alt="Imagem Canecas" class="filter-header"></a>
+  <div class="promotions-section">
+    <h1 class="filter-titles"><strong>Canecas</strong> Personalizáveis</h1>
+  </div>
+  <div class="cards-container"></div>
+  <div class="space">
+    <button class="back-btn">Voltar</button>
+  </div>
+</section>
+
+<section class="filter-section section-clothes" tabindex="-1" aria-hidden="true">
+  <a href="#"><img loading="lazy" src="./Imagens/banner-teste.jpg" alt="Imagem Roupas" class="filter-header"></a>
+  <div class="promotions-section">
+    <h1 class="filter-titles"><strong>Roupas</strong> Personalizáveis</h1>
+  </div>
+  <div class="cards-container"></div>
+  <div class="space">
+    <button class="back-btn">Voltar</button>
+  </div>
+</section>
+
+<section class="filter-section section-bottles" tabindex="-1" aria-hidden="true">
+  <a href="#"><img loading="lazy" src="./Imagens/banner-teste.jpg" alt="Imagem Garrafas" class="filter-header"></a>
+  <div class="promotions-section">
+    <h1 class="filter-titles"><strong>Garrafas</strong> Personalizáveis</h1>
+  </div>
+  <div class="cards-container"></div>
+  <div class="space">
+    <button class="back-btn">Voltar</button>
+  </div>
+</section>
+
+<section class="filter-section section-misc" tabindex="-1" aria-hidden="true">
+  <a href="#"><img loading="lazy" src="./Imagens/banner-teste.jpg" alt="Imagem Diversos" class="filter-header"></a>
+  <div class="promotions-section">
+    <h1 class="filter-titles"><strong>Diversos</strong> Personalizáveis</h1>
+  </div>
+  <div class="cards-container"></div>
+  <div class="space">
+    <button class="back-btn">Voltar</button>
+  </div>
+</section>
+
     <section class="about-section" tabindex="-1" aria-hidden="true">
       <div class="about-content">
         <div class="block block-1">

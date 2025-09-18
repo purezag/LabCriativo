@@ -595,3 +595,107 @@ if (copyPhoneBtn) {
 
 })();
 
+// ===================
+
+(function() {
+
+  // =========================
+  // Dados das seções
+  // =========================
+  const sectionsData = {
+    mug: [
+      { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+      { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+      { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+      { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+      { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+      { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+      { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+      { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+    ],
+    clothes: [
+      { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+      { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+      { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+      { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+      { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+      { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+      { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+      { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+    ],
+    bottles: [
+      { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+      { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+      { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+      { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+      { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+      { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+      { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+      { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+    ],
+    misc: [
+      { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+      { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+      { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+      { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+      { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+      { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+      { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+      { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+    ]
+  };
+
+  // =========================
+  // Dados das promoções da semana
+  // =========================
+  const promotionsData = [
+    { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+    { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+    { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+    { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+    { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+    { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+    { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+    { img: './Imagens/orange-mug.webp', alt: 'Caneca Laranja', title: 'Caneca Laranja', description: 'Muda de cor com bebida quente.', oldPrice: '50,00', newPrice: '35,00' },
+  ];
+
+  // =========================
+  // Função para criar cards
+  // =========================
+  function createCards(containerSelector, dataArray) {
+    const container = document.querySelector(containerSelector);
+    if (!container) return;
+
+    dataArray.forEach(product => {
+      const card = document.createElement('div');
+      card.className = 'shop';
+      card.innerHTML = `
+        <img loading="lazy" src="${product.img}" alt="${product.alt}">
+        <div class="info-product">
+          <h2>${product.title}</h2>
+          <span>${product.description}</span>
+        </div>
+        <p class="old-price"><b>a partir de</b> <strong>R$${product.oldPrice}</strong></p>
+        <p class="new-price">R$ <strong>${product.newPrice}</strong></p>
+        <div class="card-buttons">
+          <button class="details-btn">ver mais</button>
+          <button class="buy-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+        </div>
+      `;
+      container.appendChild(card);
+    });
+  }
+
+  // =========================
+  // Gerar cards das seções
+  // =========================
+  Object.keys(sectionsData).forEach(section => {
+    createCards(`.section-${section} .cards-container`, sectionsData[section]);
+  });
+
+  // =========================
+  // Gerar cards das promoções da semana
+  // =========================
+  createCards('.promotions-section .cards-container', promotionsData);
+
+})();

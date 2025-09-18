@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Company | Best Crafts E-commerce </title>
-  <link rel="preload" as="image" href="./Imagens/logo-tipo.png" type="image/png">
-
+  <link rel="preload" as="image" href="./Imagens/logo.webp">
   
     <style>
 
@@ -538,6 +537,30 @@ body {
   width: 100%;
 }
 
+.hero-bg {
+  position: absolute;
+  inset: 0; /* ocupa a área do hero */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  /* tamanho responsivo */
+  font-weight: 900;
+  line-height: 0.9;
+  font-size: clamp(4rem, 12vw, 18rem); /* ajusta conforme a viewport */
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+
+  /* bastante sutil — altera conforme seu fundo (branco/escuro) */
+  color: rgba(255,255,255,0.02); /* para fundo escuro */
+  /* se seu fundo for claro, use rgba(0,0,0,0.06) */
+
+  pointer-events: none;
+  user-select: none;
+  z-index: 0; /* atrás do conteúdo */
+  -webkit-font-smoothing: antialiased;
+}
 
 
 @layer demo {
@@ -2086,10 +2109,9 @@ footer .contact-button svg:hover {
   </header>
   <main>
     <section class="hero" id="hero">
-      
+      <h1 class="hero-bg">Transforme ideias</h1>
       <div class="hero-content">
 
- 
   <div class="logos">
     <img class="img-glass4" src="./Imagens/logo.webp" alt="" fetchpriority="high"
 loading="eager"

@@ -134,12 +134,13 @@ html {
     width:100vw; height:100vh;
     overflow:hidden;
     pointer-events:none;           
-    z-index:-2;                    
+    z-index:-9999;                    
   }
 
   .glass-base{
     position:fixed; inset:0;
-    z-index:-1;
+    filter: blur(120px);
+    z-index:-9999;
     pointer-events:none;
     background: rgba(255,255,255,0.55);
     backdrop-filter: blur(20px) saturate(120%);
@@ -481,7 +482,7 @@ body {
 .img-glass3,
 .img-glass5 {
   position: fixed;   /* todos fixos */
-  z-index: -1;       /* não precisa ser -9999, basta estar atrás */
+  z-index: -2;
   will-change: transform;
   pointer-events: none; /* garante que não bloqueiem cliques */
 }
@@ -490,17 +491,17 @@ body {
 
 .hero {
   width: 100%;
-  min-height: 100vh;
-  opacity: 0;
-  animation: fadeInScale 2s ease-out forwards;
+  height: 100vh;
   align-items: center;
+  justify-content: space-between;
 }
 
 .hero-content {
+  height: 100vh;
   position: relative;
   z-index: 1;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
 
@@ -511,6 +512,7 @@ body {
 }
 
 .logos {
+  padding-top: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -522,7 +524,7 @@ body {
   .carousel-comment {
     overflow-x: hidden;
     position: relative;
-    top: 10%;
+    bottom: 10%;
     
     --items: 6;
     --carousel-duration: 40s;
@@ -568,6 +570,7 @@ body {
     gap: 0.25rem;
     padding-block-end: 1rem;
     color: black;
+    
     
 
     will-change: transform;
@@ -699,21 +702,36 @@ article p {
 }
 
 .info-home .selo img {
-  width: 75px;
+  width: 50px;
 }
 
 .selo .card {
+  position: relative;
   width: 100%;
   text-align: left;
   gap: 1rem;
-  padding: 1rem;
-  border-radius: 16px;
-  pointer-events: none;
-  background: linear-gradient(rgba(255, 255, 255, 0.397), rgba(255, 255, 255, 0.05));
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  z-index: 10;
+  transition: 0.3s;
+  pointer-events: auto;
+}
+
+.selo .card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.35),
+    rgba(255, 255, 255, 0.08)
+  );
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  z-index: -1; /* fica atrás do conteúdo */
 }
 
 .info-home .selo h1 {
@@ -1352,19 +1370,21 @@ form.contact-form {
   left: 0;
   width: 100%;
   min-height: 100vh;
-  opacity: 0;
+  display: none;
   pointer-events: none;
   padding-top: 5rem;
+  opacity: 0;
 }
 
 .about-section.active {
   display: block;
-  position: relative;
   opacity: 1;
-  transform: translateY(0);
+  position: relative;
   pointer-events: auto;
-  animation: fadeInScale 2s ease-out forwards;
+  transition: opacity 1s ease-in-out;
 }
+
+
 
 .block {
   width: 80%;
@@ -1391,14 +1411,32 @@ form.contact-form {
 }
 
 .glass {
+  position: relative;
   width: 90%;
-  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 3rem;
   padding: 2rem;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 2rem;
+  z-index: 10;
+  transition: 0.3s;
   margin: auto;
 }
+
+.glass::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.35),
+    rgba(255, 255, 255, 0.08)
+  );
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  z-index: -1;
+}
+
 
 .block .text h1 {
   pointer-events: none;
@@ -2019,7 +2057,7 @@ footer .contact-button svg:hover {
           <img class="img-glass4" src="./Imagens/logo.webp" alt="" fetchpriority="high"
   loading="eager"
   decoding="async">
-          <img src="./Imagens/logo-tipo.svg" alt="Logo" class="logo">
+          <img src="./Imagens/logo-tipo.png" alt="Logo" class="logo">
         </div>
         <div class="info-home">
           <div class="selo">

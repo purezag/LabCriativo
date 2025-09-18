@@ -481,7 +481,7 @@ body {
 .img-glass3,
 .img-glass5 {
   position: fixed;   /* todos fixos */
-  z-index: -5;       /* não precisa ser -9999, basta estar atrás */
+  z-index: -1;       /* não precisa ser -9999, basta estar atrás */
   will-change: transform;
   pointer-events: none; /* garante que não bloqueiem cliques */
 }
@@ -1904,18 +1904,24 @@ footer .contact-button svg:hover {
   <link rel="stylesheet" href="./assets/aos/aos.css">
 </noscript>
 
+<div class="bg-blobs" aria-hidden="true">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+    <div class="blob b4"></div>
+    <div class="blob b5"></div>
+    <div class="blob b6"></div>
+  </div>
+  <div class="glass-base" aria-hidden="true"></div>
 
 </head>
 <body>
-  <div class="bg-blobs" aria-hidden="true">
-      <div class="blob b1"></div>
-      <div class="blob b2"></div>
-      <div class="blob b3"></div>
-      <div class="blob b4"></div>
-      <div class="blob b5"></div>
-      <div class="blob b6"></div>
-    </div>
-    <div class="glass-base" aria-hidden="true"></div>
+  <div class="background-glass">
+        <img class="img-glass1" src="./Imagens/glass-blue.webp" alt="">
+        <img class="img-glass2" src="./Imagens/glass-orange.webp" alt="">
+        <img class="img-glass3" src="./Imagens/glass-purple.webp" alt="">
+        <img class="img-glass5" src="./Imagens/glass-blue.webp" alt="">
+      </div>
   <header>
     <section class="stick-bar">
       <div class="left-bar">
@@ -2006,12 +2012,7 @@ footer .contact-button svg:hover {
   </header>
   <main>
     <section class="hero" id="hero">
-      <div class="background-glass">
-        <img class="img-glass1" src="./Imagens/glass-blue.webp" alt="">
-        <img class="img-glass2" src="./Imagens/glass-orange.webp" alt="">
-        <img class="img-glass3" src="./Imagens/glass-purple.webp" alt="">
-        <img class="img-glass5" src="./Imagens/glass-blue.webp" alt="">
-      </div>
+      
       <div class="hero-content">
         <div class="logos">
           <img class="img-glass4" src="./Imagens/logo.webp" alt="">

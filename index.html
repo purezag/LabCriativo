@@ -685,18 +685,14 @@ article p {
   font-weight: 300;
 }
 
-.carousel-comment h1 {
-  opacity: .0001;
-  pointer-events: none;
-}
+
 
 .info-home {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 10rem;
-  padding: 2rem;
+  align-items: flex-start;
+  gap: 5rem;
 }
 
 .info-home .selo {
@@ -715,6 +711,7 @@ article p {
 .selo .card {
   position: relative;
   width: 100%;
+  min-height: 100px;
   text-align: left;
   gap: 1rem;
   padding: 1rem 1.5rem;
@@ -738,6 +735,8 @@ article p {
   font-size: 1.5rem;
   font-weight: 900;
   color: #481a67;
+  line-height: 1.5rem; 
+  min-height: 2.25rem;
 }
 
 .info-home .selo p {
@@ -2059,7 +2058,7 @@ footer .contact-button svg:hover {
         </div>
         <div class="info-home">
           <div class="selo">
-            <img src="./Imagens/bike.png"alt="">
+            <img src="./Imagens/bike.png" alt="" width="50" height="50" loading="lazy">
             <div class="card">
               <h1>title <strong>here</strong></h1>
               <p>
@@ -2069,7 +2068,7 @@ footer .contact-button svg:hover {
             </div>
           </div>
           <div class="selo">
-            <img src="./Imagens/stars.png" alt="">
+            <img src="./Imagens/stars.png" alt="" width="50" height="50" loading="lazy">
             <div class="card">
               <h1>title <strong>here</strong></h1>
               <p>
@@ -2079,7 +2078,7 @@ footer .contact-button svg:hover {
             </div>
           </div>
           <div class="selo">
-            <img src="./Imagens/notebook.png"alt="">
+            <img src="./Imagens/notebook.png" alt="" width="50" height="50" loading="lazy">
             <div class="card">
               <h1>title <strong>here</strong></h1>
               <p>
@@ -2090,7 +2089,7 @@ footer .contact-button svg:hover {
           </div>
         </div>
         <div class="carousel-comment" mask>
-          <h1>Dê <strong>vida</strong> às tuas <strong>ideias</strong></h1>
+          
           <article>
             <div class="personal-info">
               <img src="./Imagens/person-comment.webp" alt="">

@@ -660,7 +660,7 @@ if (copyPhoneBtn) {
   ];
 
   // =========================
-  // Função para criar cards
+  // cards
   // =========================
   function createCards(containerSelector, dataArray) {
     const container = document.querySelector(containerSelector);
@@ -686,16 +686,10 @@ if (copyPhoneBtn) {
     });
   }
 
-  // =========================
-  // Gerar cards das seções
-  // =========================
   Object.keys(sectionsData).forEach(section => {
     createCards(`.section-${section} .cards-container`, sectionsData[section]);
   });
 
-  // =========================
-  // Gerar cards das promoções da semana
-  // =========================
   createCards('.promotions-section .cards-container', promotionsData);
 
 })();

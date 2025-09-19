@@ -487,10 +487,10 @@ body {
 .img-glass2,
 .img-glass3,
 .img-glass5 {
-  position: fixed;   /* todos fixos */
+  position: fixed;  
   z-index: -2;
   will-change: transform;
-  pointer-events: none; /* garante que não bloqueiem cliques */
+  pointer-events: none; 
 }
 
 /* =====HERO-SECTION===== */
@@ -527,26 +527,23 @@ body {
 
 .hero-bg {
   position: absolute;
-  inset: 0; /* ocupa a área do hero */
+  inset: 0; 
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 
-  /* tamanho responsivo */
   font-weight: 900;
   line-height: 0.9;
-  font-size: clamp(4rem, 12vw, 18rem); /* ajusta conforme a viewport */
+  font-size: clamp(4rem, 12vw, 18rem); 
   text-transform: uppercase;
   letter-spacing: 0.02em;
 
-  /* bastante sutil — altera conforme seu fundo (branco/escuro) */
-  color: rgba(255,255,255,0.02); /* para fundo escuro */
-  /* se seu fundo for claro, use rgba(0,0,0,0.06) */
+  color: rgba(255,255,255,0.02); 
 
   pointer-events: none;
   user-select: none;
-  z-index: 0; /* atrás do conteúdo */
+  z-index: 0; 
   -webkit-font-smoothing: antialiased;
   font-family: 'Inter', Arial, sans-serif;
 }
@@ -2332,7 +2329,6 @@ decoding="async">
 </div>
     </section>
 
-<!-- Filtros -->
 <section class="filter-section section-mug" tabindex="-1" aria-hidden="true">
   <a href="#"><img loading="lazy" src="./Imagens/banner-teste.jpg" alt="Imagem Canecas" class="filter-header"></a>
   <div class="promotions-section">
